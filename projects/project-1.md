@@ -1,16 +1,15 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
-title: Micromouse
+image: images/demos-collage3.png
+title: Mini-games. Highlight: Possum Game
 permalink: projects/micromouse
 # All dates must be YYYY-MM-DD format!
-date: 2015-07-01
+date: 2020-07-13
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
+  - Unity
+  - C#
+summary: Reel for 7 mini-games, exploring different types and aspects of games. Main focus on a 2D sidescroller.
 ---
 
 <div class="ui small rounded images">
