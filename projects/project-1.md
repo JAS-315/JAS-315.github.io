@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/running on line.png
+image: images/running.png
 title: Possum Game
 permalink: projects/micromouse
 # All dates must be YYYY-MM-DD format!
