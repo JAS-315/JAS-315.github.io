@@ -1,16 +1,15 @@
 ---
 layout: project
 type: project
-image: images/blender-collage.png
-title: Blender
+image: images/demos-depth-collage2.png
+title: Mini-Games
 permalink: projects/vacay
 # All dates must be YYYY-MM-DD format!
-date: 2019-10-22
+date: 2020-02-15
 labels:
-  - Blender
-  - 3D modelling
   - Unity
-summary: Blender model examples: three unused Blender models and one model implemented in Unity.
+  - C#
+summary: In depth look at 7 mini-games.
 ---
 
 <img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">

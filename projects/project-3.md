@@ -1,15 +1,16 @@
 ---
 layout: project
 type: project
-image: images/cotton-square.png
-title: Cotton
-permalink: projects/cotton
+image: images/blender-collage.png
+title: Blender Examples
+permalink: projects/vacay
 # All dates must be YYYY-MM-DD format!
-date: 2014-04-12
+date: 2019-10-22
 labels:
-  - Lisp
-  - GitHub
-summary: A text adventure game I developed for ICS 313.
+  - Blender
+  - 3D modelling
+  - Unity
+summary: Blender model examples- three unused Blender models and one model implemented in Unity.
 ---
 
 <img class="ui image" src="{{ site.baseurl }}/images/cotton-header.png">
