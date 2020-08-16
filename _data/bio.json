@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Jes Scaevola",
-    "label": "Student",
+    "label": "",
     "picture": "https://JAS-315.github.io/images/parvati pixel.png",
     "email": "JAScaevola@gmail.com",
     "phone": "",
     "website": "https://JAS-315.github.io",
-    "summary": "MSc Computer Science, AI specialization, University of Nottingham: expected Autumn 2020.",
+    "summary": "MSc Computer Science, University of Nottingham: expected Autumn 2020.",
     "location": {
       "address": "",
-      "postalCode": "NG7",
+      "postalCode": "",
       "city": "Nottingham",
       "countryCode": "UK",
-      "region": "England"
+      "region": ""
     },
     "profiles": [
       {
