@@ -1,15 +1,15 @@
 ---
 layout: project
 type: project
-image: images/cotton-square.png
-title: Cotton
-permalink: projects/cotton
+image: images/demos-depth-collage.png
+title: Mini-Games
+permalink: projects/vacay
 # All dates must be YYYY-MM-DD format!
-date: 2014-04-12
+date: 2020-02-15
 labels:
-  - Lisp
-  - GitHub
-summary: A text adventure game I developed for ICS 313.
+  - Unity
+  - C#
+summary: In depth look at 7 mini-games.
 ---
 
 <img class="ui image" src="{{ site.baseurl }}/images/cotton-header.png">
