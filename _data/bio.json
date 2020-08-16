@@ -4,9 +4,9 @@
     "label": "Student",
     "picture": "https://JAS-315.github.io/images/parvati pixel.png",
     "email": "JAScaevola@gmail.com",
-    "phone": "808-333-4444",
+    "phone": "",
     "website": "https://JAS-315.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "summary": "MSc Computer Science, AI specialization, University of Nottingham: expected Autumn 2020.",
     "location": {
       "address": "",
       "postalCode": "NG7",
@@ -25,7 +25,7 @@
         "username": "scaevola",
         "url": "http://linkedin.com/in/scaevola"
       },
-      {
+      /*{
         "network": "twitter",
         "username": "mollymal",
         "url": "http://twitter.com/changeme"
@@ -34,7 +34,7 @@
         "network": "instagram",
         "username": "molly",
         "url": "http://instagram.com/changeme"
-      }
+      }*/
     ]
   },
   "interests": [
@@ -61,35 +61,37 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "C",
+        "C#",
         "C++",
-        "Java",
-        "Javascript",
-        "Assembly",
-        "Common Lisp"
+        "R",
+        "Python"
       ]
     },
     {
       "name": "Toolsets/OS",
       "level": "",
       "keywords": [
+        "Windows 10",
         "MacOS",
-        "Ubuntu",
-        "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "Git/GitHub"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
-      "endDate": "Present",
+      "institution": "University of Nottingham, Nottingham, UK",
+      "area": "Computer Science (expected Autumn, 2020)",
+      "studyType": "MSc",
+      //"startDate": "2013-09-01",
+      //"endDate": "Present",
       "gpa": "",
       "courses": [
+        "Programming",
+        "Systems and Networks",
+        "Databases, Interfaces, and Software Design Principles",
+        "Computer Graphics",
+        "Games",
+        "Data Modelling and Anaylsis"
       ]
     }
   ],
@@ -121,12 +123,12 @@
   ],
   "volunteer": [
     {
-      "organization": "Center for Renewable Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
+      "organization": "Men's Roller Derby Association",
+      "website": "http://www.MRDA.org",
+      "position": "Director of Member Relations",
+      "startDate": "2019-15-01",
       "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "summary": "Elected directorship: overseeing member league status and compliance, and member complaints",
       "highlights": [
         "Design firmware for distributed weather sensor network",
         "Maintain custom data collection and storage infrastructure"
