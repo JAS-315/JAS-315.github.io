@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/demos-depth-collage.png
+image: images/demos-depth-collage2.png
 title: Mini-Games
 permalink: projects/vacay
 # All dates must be YYYY-MM-DD format!
