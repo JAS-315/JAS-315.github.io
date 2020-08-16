@@ -2,14 +2,14 @@
 layout: project
 type: project
 image: images/demos-collage3.png
-title: Mini-games
+title: Possum Game
 permalink: projects/micromouse
 # All dates must be YYYY-MM-DD format!
 date: 2020-07-13
 labels:
   - Unity
   - C#
-summary: Reel for 7 mini-games, exploring different types and aspects of games. Main focus on a 2D sidescroller.
+summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7 mini-games with focus on the possum game.
 ---
 
 <div class="ui small rounded images">
