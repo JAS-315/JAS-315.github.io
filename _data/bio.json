@@ -18,17 +18,12 @@
       {
         "network": "github",
         "username": "JAS-315",
-        "url": "http://github.com/changeme"
+        "url": "http://github.com/JAS-315"
       },
       {
         "network": "linkedin",
         "username": "scaevola",
         "url": "http://linkedin.com/in/scaevola"
-      },
-      {
-        "network": "",
-        "username": "",
-        "url": ""
       }
     ]
   },
@@ -88,6 +83,30 @@
         "Games",
         "Data Modelling and Anaylsis"
       ]
+    }
+    {
+      "institution": "University of Missouri, Columbia, MO, USA",
+      "area": "Religious Studies, Ancient Studies (minor)",
+      "studyType": "MA",
+      "startDate": "",
+      "endDate": "2014",
+      "gpa": "3.83"
+    }
+    {
+      "institution": "University of Missouri, Columbia, MO, USA",
+      "area": "History",
+      "studyType": "MA",
+      "startDate": "",
+      "endDate": "2012",
+      "gpa": "3.79"
+    }
+    {
+      "institution": "University of Missouri, Columbia, MO, USA",
+      "area": "History, Philosophy, Classical Studies",
+      "studyType": "Triple BA",
+      "startDate": "",
+      "endDate": "2009",
+      "gpa": "3.04"
     }
   ],
   "work": [
