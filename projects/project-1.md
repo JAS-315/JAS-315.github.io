@@ -2,7 +2,7 @@
 layout: project
 type: project
 image: images/demos-collage3.png
-title: Mini-games. Highlight: Possum Game
+title: Mini-games
 permalink: projects/micromouse
 # All dates must be YYYY-MM-DD format!
 date: 2020-07-13
