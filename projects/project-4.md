@@ -15,8 +15,8 @@ summary: OpenGL Forest, using 2D textures on 3D models and heirarchical modellin
 ---
 
 <div class="ui small rounded images">
-  <img class="ui image" src="../images/pixel forest 1a.png">
-  <img class="ui image" src="../images/frog.png">
+  <img class="ui image" src="../images/pixel forest 1.png">
+  <img class="ui image" src="../images/frog1a.png">
   <img class="ui image" src="../images/tree parts.png">
 
 </div>
