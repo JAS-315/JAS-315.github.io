@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/demos-depth-collage2.png
 title: Mini-Games
-permalink: projects/vacay
+permalink: projects/minigames
 # All dates must be YYYY-MM-DD format!
 date: 2020-02-15
 labels:
@@ -12,12 +12,8 @@ labels:
 summary: In depth look at 7 mini-games.
 ---
 
-<img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">
+<img class="ui medium center floated rounded image" src="../images/demos-depth-collage2.png">
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Pdsl75j5Vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
-
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
- 
-Source: <a href="https://github.com/theVacay/vacay"><i class="large github icon"></i>theVacay/vacay</a>
+A more in-depth look at my mini-game projects.
