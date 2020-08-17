@@ -14,10 +14,11 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
 
 <div class="ui small rounded images">
   <img class="ui image" src="../images/running.png">
-  <img class="ui image" src="../images/berry.png">
   <img class="ui image" src="../images/title screen.png">
-  <img class="ui image" src="../images/play dead.png">
 </div>
+
+<figure class="video_container">
+<iframe src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allowfullscreen=true></iframe></figure>
 
 ## Introduction 
 ### Background
