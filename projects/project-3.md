@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/py title.png
 title: Collaborative Project- Video Game
-permalink: projects/blender
+permalink: projects/pyfighter
 # All dates must be YYYY-MM-DD format!
 date: 2018-12-28
 labels:
@@ -72,4 +72,5 @@ As the art was a significant part of the contribution (and I was most artistical
 
 For the code, I spearheaded the second refactoring and use of in-built classes. We had made three versions of the game. The first refactor set us up to use OOP style, but none of us really understood the use of Groups (a class in-build to Pygame). I studied up on it, as it seemed to be the answer to a lot of little things nagging at my brain. During the first refactor, hero and enemy hitboxes, collision detection, powerup collection, and lot of other things were created with very clever and complex code. I was interested in something more direct and versatile. In researching two in-built classes to Pygame (Sprites and Groups), I realized, when used correctly, these things are much more simply and elegantly implemented. I took what I had found back to the group, we wrapped our collective brain around it, and were able to produce the second refactor.
 
-
+[The project's GitHub repo](https://github.com/Demi-hero/UoN_Game_Project).
+Try Force was [Peter](https://github.com/ExcessGravitas), [Nathan](https://github.com/Demi-hero/), and myself. They were really lovely to work with.
