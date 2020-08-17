@@ -45,8 +45,8 @@ summary: A collaborative project to make a side-scrolling space shooter called "
 
 *There are some quality of life implementations in the game as well: there is an option to pause the game loop mid-play, as well as quit the game without needing to use the mouse. There is also a start screen that explains how to play the game without the needing to read the readme.* 
 
-*Sounds were taken from grsites.com *
-*Music was taken from dl-sounds.com*
+*Sounds were taken from grsites.com 
+Music was taken from dl-sounds.com*
 
 My contributions dealt largely with the asthetics of the game. I strongly believe setting a pleasing scene with appropriate graphics and effects has a big impact on players. As mentioned, the game drew inspiration from retro pop culture, so I kept that in mind when producing the art.  
 
