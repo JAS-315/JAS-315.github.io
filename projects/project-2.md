@@ -12,7 +12,9 @@ labels:
 summary: In depth look at 7 mini-games.
 ---
 
-<img class="ui medium centered floated rounded image" src="../images/demos-depth-collage2.png">
+<img class="ui medium centered rounded image" src="../images/demos-depth-collage2.png">
+
+<br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_Pdsl75j5Vg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
