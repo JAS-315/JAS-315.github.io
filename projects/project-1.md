@@ -13,8 +13,13 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
 ---
 
 <div class="ui small rounded images">
-  <img class="ui image" src="../images/running.png">
-  <img class="ui image" src="../images/title screen.png">
+  <img class="ui image" src="../images/possum love.png">
+  <img class="ui image" src="../images/crushers.png">
+  <img class="ui image" src="../images/kick berry.png">
+  <img class="ui image" src="../images/offer berry.png">
+
+
+
 </div>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
