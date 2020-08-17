@@ -17,8 +17,7 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
   <img class="ui image" src="../images/title screen.png">
 </div>
 
-<figure class="video_container">
-<iframe src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allowfullscreen=true></iframe></figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Introduction 
 ### Background
