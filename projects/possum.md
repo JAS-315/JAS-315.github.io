@@ -9,6 +9,9 @@ date: 2020-07-13
 labels:
   - Unity
   - C#
+  - 2D
+  - Pixel Art
+  - Video Game
 summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7 mini-games with focus on the possum game.
 ---
 
@@ -17,9 +20,6 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
   <img class="ui image" src="../images/crushers.png">
   <img class="ui image" src="../images/kick berry.png">
   <img class="ui image" src="../images/offer berry.png">
-
-
-
 </div>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
