@@ -14,16 +14,14 @@ labels:
 summary: OpenGL Forest, using 2D textures on 3D models and heirarchical modelling.
 ---
 
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/pixel forest 1b.png">
-  <img class="ui image" src="../images/frog1a.png">
-  <img class="ui image" src="../images/tree parts.png">
+<img class="ui medium centered floated rounded image" src="../images/pixel forest 1b.png">
 
-</div>
-<img class="ui medium left floated rounded image" src="../images/green tree.PNG">
+<img class="ui medium centered floated rounded image" src="../images/tree parts.png">
+
+<img class="ui small left floated rounded image" src="../images/green tree.PNG">
 I decided to make a small forest, using specific OpenGL framework provided by my module convener and pixel art (original credits to Grafxkid, but they have been heavily modified for this purpose). I love 2D pixel art, and it sounded like an interesting idea to use it in a 3D world. To do so, I redrew the graphics the I would use as skins so they could wrap around objects, rather than appear as flat planes. For all objects, I used GLUquadric shapes: cylinder, sphere, and disk. I started by constructing the “leafy” trees. I used a cylinder for the trunk, a cone created from a cylinder for the branches, and a sphere for the top. I scaled the top to slightly skew the shape, so it is slightly wider and longer than it is tall. It is a very subtle change but gives a more pleasing look than a perfect sphere.  
 
-<img class="ui medium right floated rounded image" src="../images/fir.PNG">
+<img class="ui small right floated rounded image" src="../images/fir.PNG">
 I created the fir trees in much the same way, but with different proportions for the trunk and branches, and by using cones created from cylinders for the tiers. Each tier has a disk underneath, so the layers do not appear hollow, and I matched the colours using the RGB values from the textures. After each part could be drawn, it was simply a matter of placing them at the appropriate heights. I textured each part of the tree (the disks are just coloured) during each draw sequence. For both tree types, the branch cone is slightly inside the trunk cylinder, as placing them at exact height leaves an apparent line where the two shapes meet. Insetting the cone gives the branch and trunk textures the appearance of blending.
 
 <img class="ui medium left floated rounded image" src="../images/bushes.PNG">
