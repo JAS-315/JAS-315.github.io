@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/blender-collage.png
 title: Blender Examples
-permalink: projects/vacay
+permalink: projects/blender
 # All dates must be YYYY-MM-DD format!
 date: 2019-10-22
 labels:
