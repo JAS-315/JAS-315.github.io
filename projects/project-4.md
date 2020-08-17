@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/pixel forest 1.png
+image: images/pixel forest 1a.png
 title: Pixel Forest
 permalink: projects/pixelforest
 # All dates must be YYYY-MM-DD format!
