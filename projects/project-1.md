@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/running.png
 title: Possum Game
-permalink: projects/micromouse
+permalink: projects/possum
 # All dates must be YYYY-MM-DD format!
 date: 2020-07-13
 labels:
