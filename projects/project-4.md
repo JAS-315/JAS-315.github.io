@@ -14,9 +14,9 @@ labels:
 summary: OpenGL Forest, using 2D textures on 3D models and heirarchical modelling.
 ---
 
-<img class="ui medium centered floated rounded image" src="../images/pixel forest 1b.png">
+<img class="ui medium centered rounded image" src="../images/pixel forest 1b.png">
 
-<img class="ui medium centered floated rounded image" src="../images/tree parts.png">
+<img class="ui medium centered rounded image" src="../images/tree parts.png">
 
 <img class="ui small left floated rounded image" src="../images/green tree.PNG">
 I decided to make a small forest, using specific OpenGL framework provided by my module convener and pixel art (original credits to Grafxkid, but they have been heavily modified for this purpose). I love 2D pixel art, and it sounded like an interesting idea to use it in a 3D world. To do so, I redrew the graphics the I would use as skins so they could wrap around objects, rather than appear as flat planes. For all objects, I used GLUquadric shapes: cylinder, sphere, and disk. I started by constructing the “leafy” trees. I used a cylinder for the trunk, a cone created from a cylinder for the branches, and a sphere for the top. I scaled the top to slightly skew the shape, so it is slightly wider and longer than it is tall. It is a very subtle change but gives a more pleasing look than a perfect sphere.  
