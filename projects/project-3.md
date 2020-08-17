@@ -10,11 +10,11 @@ labels:
   - Python
   - Pygame
   - Unity
-summary: A collaborative project to make a side-scrolling space shooter. We called our team "Try Force" and in a very short amount of time, made a short game called "The Last PyFighter." 
+summary: A collaborative project to make a side-scrolling space shooter called "The Last PyFighter." Our team, "Try Force," created this game in a very short amount of time.
 ---
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true" poster="../images/pyfighter title.png">
+  <video controls="true" allowfullscreen="true" poster="../images/pyfighter title 2.png">
     <source src="../images/pyfighter demo.mp4" type="video/mp4">
   </video>
 </figure>
