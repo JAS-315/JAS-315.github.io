@@ -14,9 +14,7 @@ summary: A collaborative project to make a side-scrolling space shooter called "
 ---
 
 <figure class="video_container">
-  <video controls="true" allowfullscreen="true">
-    <source src="../images/pygame demo.mp4" type="video/mp4">
-  </video>
+  <iframe width = "800" height = "600" src=".../images/pygame demo.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
 *An extract from the Last Pyfighter instruction manual:*
