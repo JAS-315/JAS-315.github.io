@@ -15,7 +15,7 @@ summary: A collaborative project to make a side-scrolling space shooter called "
 
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="../images/pyfighter title 2.png">
-    <source src="../images/pyfighter demo.mp4" type="video/mp4">
+    <source src="../images/pygame demo.mp4" type="video/mp4">
   </video>
 </figure>
 
