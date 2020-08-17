@@ -9,10 +9,14 @@ date: 2020-02-15
 labels:
   - Unity
   - C#
+  - 2D
+  - 3D
+  - Blender
+  - Video Game
 summary: In depth look at 7 mini-games.
 ---
 
-<img class="ui medium centered rounded image" src="../images/demos-depth-collage2.png">
+<img class="ui large centered rounded image" src="../images/demos-depth-collage2.png">
 
 <br>
 
