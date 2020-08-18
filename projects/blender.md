@@ -30,8 +30,8 @@ I constructed the next three models for use on a project that was eventually aba
 
   <div class="ui medium rounded images">
   <img class="ui image" src="../images/cat face.PNG">
-  <img class="ui image" src="../images/cat nightmare.png">
-  <img class="ui image" src="../images/cat stand.PNG"></div>
+  <img class="ui image" src="../images/cat stand.PNG">  
+  <img class="ui image" src="../images/cat nightmare.png"></div>
 
 For the butterfly, I again used mirroring to keep the halves consistent. This time, I used actual photographs of a butterfly (limenitis arthemis or "red spotted purple butterfly") to texture the wings. To have them double sided, I just put two surfaces close together, the shored up the thickness. The body here is simply a black material, with its values adjusted, so it's not too shiny.
 
