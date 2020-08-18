@@ -39,6 +39,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
   - Avoid water, crushing hazards, and enemies. 
 - Fulfil periodic requests by collecting and distributing items to overcome obstacles and progress. 
   - Player has a 1-slot HUD inventory, which is suitable. The HUD is hidden except within areas items can be used.  
+<img class="ui small right floated rounded image" src="../images/offer berry.png">
 
 ### Game Flow 
 - Player must overcome/solve obstacles to progress and the possum is required to advance levels. 
@@ -46,6 +47,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
   - In Level 1, missing a jump initially sets you back in progress, but later will result in “death,” thus restarting the level. 
   - In Level 2, most of vertical jumps are significantly wider, but involve a platform affected by physics (see Physics and Parameters for more information). Missing a jump will restart the level. 
 
+<img class="ui small right floated rounded image" src="../images/title screen.png">
 ### Characters 
 - The player is called “Pink.” Pink likes animals and jumping.  
   - Pink can move horizontally and can jump. 
@@ -63,12 +65,14 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - Pink has a default mass and gravity of 1, allowing him to interact with the world.  
   - Pink’s mass is increased by the value of Checkers’ mass, when Checkers is following (resets when not). In Level 2, this affects logs in the water, making them more challenging to clear with a follower.  
     - This is not made explicit and adds to the difficulty curve.
+<img class="ui medium right floated rounded image" src="../images/play dead.png">
 - While Checkers is “playing dead,” any connectivity and following features are removed. He will fall to the ground (if airborne) and his twitching body will be able to be scooted around by Pink (this sounds morbid typed out, but is meant to be playful. I mean, he's not really dead...).           
 - Certain surfaces have a “bouncy” physics material, allowing the player to jump higher than usual. Some instances are essential, while others are playful. 
   - Level 1: the awnings of buildings are bouncy, and a secondary jump can be made to increase height further. This is necessary at least once--- twice if the player’s velocity is too low when initially striking the surface.  
   - Level 2: when enemies are stomped, there is a delay before the corpse is cleared. Different Colliders allow different effects. 
     - Frog-type enemies: the player can bounce on the smashed enemy until cleared. 
     - Blueberry-type enemies: the player can roll or be kick the enemy, like a ball, until cleared.  
+<img class="ui small right floated rounded image" src="../images/kick berry.png">
 - Non-stationary Surfaces:
   - Moving platforms- Level 1, Port area. 
   - Floating logs- Level 2.  
@@ -104,6 +108,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - I purposefully kept story telling as minimalistic as possible. 
   - Active communication is accomplished wholly through symbols.
   - Passive communication is accomplished through scene elements, such as signs, billboards, and glowing items.
+<img class="ui small centered rounded image" src="../images/possum love.png"><img class="ui small centered rounded image" src="../images/crushers.png">
 - Another thing I couldn't tear myself away from that I love from the 16-bit days are cutscenes. Yes, we have cutscenes now, but there was something really fun about cutscenes then. Think back to Chrono Trigger and your first visit to Magus' castle; Terranigma and the skateboarding scene; Final Fantasy III (US) and the opera (amongst so many others). There was something exciting and unique there. So, I made the end of my currently very short game with that in mind. 
 
 <video width="768" height="432" controls>
