@@ -141,20 +141,23 @@
       ]
     }
   ],
-  "grants and awards": [
+  "awards": [
     { 
+      "type": "grant",
       "title": "Supplemental Stipend",
       "date": "2013",
       "awarder": "Ancient Studies Program, University of Missouri",
       "summary": ""
     },
     {
+      "type": "award",
       "title": "John D. Bies International Travel Award",
       "date": "2013",
       "awarder": "University of Missouri",
       "summary": ""
     },
     {
+      "type": "grant",
       "title": "Travel Scholarship",
       "date": "2013",
       "awarder": "Ancient Studies Program, University of Missouri",
