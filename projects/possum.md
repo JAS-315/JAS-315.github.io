@@ -22,7 +22,7 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
   <img class="ui image" src="../images/offer berry.png">
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Introduction 
 ### Background
@@ -107,8 +107,6 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 <video width="768" height="432" controls>
     <source src="../images/Story Telling.mp4" type="video/mp4">
 </video>
-
-<iframe width = "768" height = "432" src="../images/Story Telling.mp4" frameborder="0" allowfullscreen="true"> </iframe>
 
 ### Trial and Error 
 *I believed this game concept was a series of simple ideas. I was mostly mistaken.*   
