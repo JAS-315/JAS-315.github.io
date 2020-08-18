@@ -27,10 +27,10 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 
 ## Prototype Design and Specification 
 ### Core Game Play 2D Side-Scrolling Platformer 
+<img class="ui medium right floated rounded image" src="../images/offer berry.png">
 - Collect the possum and escort him to safety. 
   - Jump and climb to reach the goal. 
   - Avoid water, crushing hazards, and enemies. 
-<img class="ui medium right floated rounded image" src="../images/offer berry.png">
 - Fulfil periodic requests by collecting and distributing items to overcome obstacles and progress. 
   - Player has a 1-slot HUD inventory, which is suitable. The HUD is hidden except within areas items can be used.  
 
@@ -58,7 +58,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - Pink has a default mass and gravity of 1, allowing him to interact with the world.  
   - Pink’s mass is increased by the value of Checkers’ mass, when Checkers is following (resets when not). In Level 2, this affects logs in the water, making them more challenging to clear with a follower.  
     - This is not made explicit and adds to the difficulty curve.
-<img class="ui medium right floated rounded image" src="../images/play dead.PNG">
+<img class="ui large right floated rounded image" src="../images/play dead.PNG">
 - While Checkers is “playing dead,” any connectivity and following features are removed. He will fall to the ground (if airborne) and his twitching body will be able to be scooted around by Pink (this sounds morbid typed out, but is meant to be playful. I mean, he's not really dead...).           
 - Certain surfaces have a “bouncy” physics material, allowing the player to jump higher than usual. Some instances are essential, while others are playful. 
   - Level 1: the awnings of buildings are bouncy, and a secondary jump can be made to increase height further. This is necessary at least once--- twice if the player’s velocity is too low when initially striking the surface.  
@@ -101,12 +101,9 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - I purposefully kept story telling as minimalistic as possible. 
   - Active communication is accomplished wholly through symbols.
   - Passive communication is accomplished through scene elements, such as signs, billboards, and glowing items.
-  
-  
   <div class="ui medium rounded images">
   <img class="ui image" src="../images/possum love.png">
-  <img class="ui image" src="../images/crushers.png">
-</div>
+  <img class="ui image" src="../images/crushers.png"></div>
 - Another thing I couldn't tear myself away from that I love from the 16-bit days are cutscenes. Yes, we have cutscenes now, but there was something really fun about cutscenes then. Think back to Chrono Trigger and your first visit to Magus' castle; Terranigma and the skateboarding scene; Final Fantasy III (US) and the opera (amongst so many others). There was something exciting and unique there. So, I made the end of my currently very short game with that in mind. 
 
 <video width="768" height="432" controls>
