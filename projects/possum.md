@@ -101,8 +101,10 @@ You find a possum eating trash in the city. This is no place for a possum. You f
   
 ### Storytelling
 *See video below.*
-- I purposefully kept story telling as minimalistic as possible. Active communication is done wholly through symbols and there is a bit of passive communication here and there, such as stop signs before the port to warn the player a bit.
-- Another thing I couldn't tear myself away from that I love from the 16-bit days are cutscenes. Yes, we have cutscenes now, but there was something really fun about cutscenes then. Think back to Chrono Trigger and your first visit to Magus' castle; Terranigma and the skateboarding scene; Final Fantasy III (US) and the opera. There was something exciting and unique there. So, I made the end of my currently very short game with that in mind. 
+- I purposefully kept story telling as minimalistic as possible. 
+  - Active communication is accomplished wholly through symbols.
+  - Passive communication is accomplished through scene elements, such as signs, billboards, and glowing items.
+- Another thing I couldn't tear myself away from that I love from the 16-bit days are cutscenes. Yes, we have cutscenes now, but there was something really fun about cutscenes then. Think back to Chrono Trigger and your first visit to Magus' castle; Terranigma and the skateboarding scene; Final Fantasy III (US) and the opera (amongst so many others). There was something exciting and unique there. So, I made the end of my currently very short game with that in mind. 
 
 <video width="768" height="432" controls>
     <source src="../images/Story Telling.mp4" type="video/mp4">
