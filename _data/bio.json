@@ -119,15 +119,13 @@
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
+      "company": "See LinkedIn",
+      "position": "",
       "website": "",
-      "startDate": "2015-08-01",
-      "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
       ]
     }
   ],
@@ -143,20 +141,23 @@
       ]
     }
   ],
-  "grants and awards": [
+  "awards": [
     { 
+      "type": "grant",
       "title": "Supplemental Stipend",
       "date": "2013",
       "awarder": "Ancient Studies Program, University of Missouri",
       "summary": ""
     },
     {
+      "type": "award",
       "title": "John D. Bies International Travel Award",
       "date": "2013",
       "awarder": "University of Missouri",
       "summary": ""
     },
     {
+      "type": "grant",
       "title": "Travel Scholarship",
       "date": "2013",
       "awarder": "Ancient Studies Program, University of Missouri",

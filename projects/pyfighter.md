@@ -13,11 +13,9 @@ labels:
 summary: A collaborative project to make a side-scrolling space shooter called "The Last PyFighter." Our team, "Try Force," created this game in a very short amount of time.
 ---
 
-<figure class="video_container">
-  <video controls="true" allowfullscreen="true">
+<video width="720" height="405" controls>
     <source src="../images/pygame demo.mp4" type="video/mp4">
-  </video>
-</figure>
+</video>
 
 *An extract from the Last Pyfighter instruction manual:*
 

@@ -22,7 +22,7 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
   <img class="ui image" src="../images/offer berry.png">
 </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Introduction 
 ### Background
@@ -98,6 +98,17 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - Both levels are designed with a series of Tile Maps set to various Layers, some of which have their HSV parameters set to give the illusion of depth. 
   - In Level 1, the Value of layers increase (brighten) the further away a layer is, to give the idea that certain buildings and objects are more distant.  
   - In Level 2, the settings are opposite to accomplish the illusion that distant trees and objects are darker, which adds to the ambiance.   
+  
+### Storytelling
+*See video below.*
+- I purposefully kept story telling as minimalistic as possible. 
+  - Active communication is accomplished wholly through symbols.
+  - Passive communication is accomplished through scene elements, such as signs, billboards, and glowing items.
+- Another thing I couldn't tear myself away from that I love from the 16-bit days are cutscenes. Yes, we have cutscenes now, but there was something really fun about cutscenes then. Think back to Chrono Trigger and your first visit to Magus' castle; Terranigma and the skateboarding scene; Final Fantasy III (US) and the opera (amongst so many others). There was something exciting and unique there. So, I made the end of my currently very short game with that in mind. 
+
+<video width="768" height="432" controls>
+    <source src="../images/Story Telling.mp4" type="video/mp4">
+</video>
 
 ### Trial and Error 
 *I believed this game concept was a series of simple ideas. I was mostly mistaken.*   
