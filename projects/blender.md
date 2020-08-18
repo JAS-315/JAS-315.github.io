@@ -16,12 +16,12 @@ summary: Four Blender models- three unused and one used in Unity.
 ---
 
 First, let's talk about my first Blender port to Unity. I was making a short FPS project and wanted a recognisable target. I decided on these targets which are found in certain carnival games, particularly at Dave & Busters, where some years before, my friend and I had spent an afternoon assaulting these weird clowns. I used a basic shape, like a bowling pin, then added a texture I drew on my iPad (Sketchbook). I took this opportunity to experiment with adding hair to a model, as the actual objects have sort of ostrich feather hair. 
-  <div class="ui medium rounded images">
-  <img class="ui image" src="../images/clown game.jpg">
-  <img class="ui image" src="../images/clown.PNG"></div>
+<img class="ui medium centered rounded image" src="../images/clown game.jpg">
 
 However, when I ported my model into Blender, it lost its hair.
-<img class="ui medium centered rounded image" src="../images/clown 2.PNG">
+  <div class="ui medium rounded images">
+  <img class="ui image" src="../images/clown.PNG">
+  <img class="ui image" src="../images/clown 2.PNG"></div>
 
 I eventually worked around it, as this is a common problem. The remedy does alter the look a bit, and I did not spend a lot of time trying to replicate the colours as they were in Blender. Is it the same? Not exactly. Is it good enough? It is! I can also see using this work around to make some interesting hairstyles with ease. 
 <img class="ui medium centered rounded image" src="../images/clown 3.png">
@@ -30,6 +30,7 @@ I constructed the next three models for use on a project that was eventually aba
 
   <div class="ui medium rounded images">
   <img class="ui image" src="../images/cat face.PNG">
+  <img class="ui image" src="../images/cat nightmare.png">
   <img class="ui image" src="../images/cat stand.PNG"></div>
 
 For the butterfly, I again used mirroring to keep the halves consistent. This time, I used actual photographs of a butterfly (limenitis arthemis or "red spotted purple butterfly") to texture the wings. To have them double sided, I just put two surfaces close together, the shored up the thickness. The body here is simply a black material, with its values adjusted, so it's not too shiny.
