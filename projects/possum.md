@@ -30,7 +30,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - Collect the possum and escort him to safety. 
   - Jump and climb to reach the goal. 
   - Avoid water, crushing hazards, and enemies. 
-<img class="ui small right floated rounded image" src="../images/offer berry.png">
+<img class="ui medium right floated rounded image" src="../images/offer berry.png">
 - Fulfil periodic requests by collecting and distributing items to overcome obstacles and progress. 
   - Player has a 1-slot HUD inventory, which is suitable. The HUD is hidden except within areas items can be used.  
 
@@ -41,7 +41,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
   - In Level 2, most of vertical jumps are significantly wider, but involve a platform affected by physics (see Physics and Parameters for more information). Missing a jump will restart the level. 
 
 ### Characters 
-<img class="ui small right floated rounded image" src="../images/title screen.png">
+<img class="ui medium right floated rounded image" src="../images/title screen.png">
 - The player is called “Pink.” Pink likes animals and jumping.  
   - Pink can move horizontally and can jump. 
   - Pink has one hit point.  
@@ -62,7 +62,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - While Checkers is “playing dead,” any connectivity and following features are removed. He will fall to the ground (if airborne) and his twitching body will be able to be scooted around by Pink (this sounds morbid typed out, but is meant to be playful. I mean, he's not really dead...).           
 - Certain surfaces have a “bouncy” physics material, allowing the player to jump higher than usual. Some instances are essential, while others are playful. 
   - Level 1: the awnings of buildings are bouncy, and a secondary jump can be made to increase height further. This is necessary at least once--- twice if the player’s velocity is too low when initially striking the surface.  
-<img class="ui small right floated rounded image" src="../images/kick berry.png">
+<img class="ui medium right floated rounded image" src="../images/kick berry.png">
   - Level 2: when enemies are stomped, there is a delay before the corpse is cleared. Different Colliders allow different effects. 
     - Frog-type enemies: the player can bounce on the smashed enemy until cleared. 
     - Blueberry-type enemies: the player can roll or be kick the enemy, like a ball, until cleared.  
@@ -103,7 +103,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
   - Passive communication is accomplished through scene elements, such as signs, billboards, and glowing items.
   
   
-  <div class="ui small rounded images">
+  <div class="ui medium rounded images">
   <img class="ui image" src="../images/possum love.png">
   <img class="ui image" src="../images/crushers.png">
 </div>
