@@ -17,6 +17,8 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
 
 <iframe width="768" height="432" src="https://www.youtube.com/embed/QffNhnOr8LU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+*Reel with highlights of 7 mini-games and a focus on the possum game.*
+
 ## Introduction 
 ### Background
 - As a fan of low-stress, self-paced, exploratory games, my aim was to create a small, contained narrative with a minimalistic approach. Death is not necessarily looming, but it is possible; there are fun elements that don’t progress the game, but don’t go completely off track (extra places to climb or bounce); and the level design and elements are not limited to one concept (obstacles, triggers, etc., could be altered to fit an expanded story and game).  
