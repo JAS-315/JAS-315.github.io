@@ -78,10 +78,10 @@
   "education": [
     {
       "institution": "University of Nottingham, Nottingham, UK",
-      "area": "Computer Science (expected Autumn, 2020)",
+      "area": "Computer Science",
       "studyType": "MSc",
       "startDate": "",
-      "endDate": "",
+      "endDate": "2020",
       "gpa": "",
       "courses": [
         "Programming",
