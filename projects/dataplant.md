@@ -50,11 +50,12 @@ I removed missing value and used the value of populated rows for each attribute 
 <img class="ui image" src="../images/DMA images/1/histo o9.png">
 <img class="ui image" src="../images/DMA images/1/histo wt.png">
 <img class="ui image" src="../images/DMA images/1/histo area.png">
-<img class="ui image" src="../images/DMA images/1/histo hue.png"></div>
+<img class="ui image" src="../images/DMA images/1/histo hue.png"></div> \
+*Figure 1*
 
 I visualised the Class variable by colour and chose the Viridis pallet, as it's not only aesthetically pleasing, but also discernible to those with colour blindness. I represented the mean, median, and mode using colour-blind-safe colours, as well as different lines.
 
-Considering the histograms along with the calculations in Figure 1, the x-axis reflects each attribute’s mean (normal distribution) or median (abnormal distribution) as the centre; range is the scale that the x-axis spans; standard deviation as where 2/3 of the data falls to the left or right of mean (normal distribution, only). The ideal normal distribution has the same mean, median, and mode.
+Considering the histograms along with the centrality and dispersion calculations in 1a, the x-axis reflects each attribute’s mean (normal distribution) or median (abnormal distribution) as the centre; range is the scale that the x-axis spans; standard deviation as where 2/3 of the data falls to the left or right of mean (normal distribution, only). The ideal normal distribution has the same mean, median, and mode.
 
 Considering the data from the centrality and dispersion calculations, we should see this or very close to it for all Orientations, at least. However, examining the histograms, Orientation0, and Orientation5 have negative skews, while Orientation2, Orientation3, Orientation4, Orientation8, Orientation9, and Depth have positive skews. Outliers are most prominent for Orientations 2-4 and 7-9, as well as LeafArea and LeafHue. LeafWeight has the most dissimilar distribution, which is expected with over with half the instances missing. The distributions are generally normal and somewhat symmetrical for CentroidX, Width, Orientation1, Orientation6, Orientation7, LeafArea, and LeafHue. Exceptions to the above are possible bimodal distributions in CentroidY and Mass.
 
@@ -62,56 +63,61 @@ Considering the data from the centrality and dispersion calculations, we should 
 
 According to the correlation coefficients: Orientation1 and Orientation7 have a very strong negative correlation-- when one attribute increases, the other decreases. Mass and Orientation0 have a very weak negative correlation, but we can make a reserved judgement that when one attribute increases, the other decreases. Orientation7 and Orientation8 have a very strong positive correlation-- when one attribute increases, the other does as well. Having examined 40% of the Orientation variables, we see the possibility that the Orientation attributes are dependent on each other, but not necessarily other variables.
 
-**Orientation1 and Orientation7:** -0.8696721
-**Mass and Orientation0:** -0.08768968
-**Orientation7 and Orientation8:** 0.9291126
+**Orientation1 and Orientation7:** -0.8696721\
+**Mass and Orientation0:** -0.08768968\
+**Orientation7 and Orientation8:** 0.9291126\
 
 ### 1b-ii: The Two Most Correlated Variables ###
 
-**Strongest Correlation-Orientation8 and Orientation9:** 0.9605505
+**Strongest Correlation-Orientation8 and Orientation9:** 0.9605505\
 Having now examined 50% of the Orientation attributes and considering the results of 1Bi(iiii), the case for Orientation attributes having linear dependencies with each other is strengthened, though we cannot confidently comment on their relationship with non-Orientation attributes.
 
 ### 1b-iii: The Two Least Correlated Variables ###
 
-**Weakest Correlation-Depth and LeafArea:** 0.0005190327
+**Weakest Correlation-Depth and LeafArea:** 0.0005190327\
 Having now examined 38% of the remaining non-Orientation attributes, the results indicate the possibility that non-Orientation attributes have weak or no correlation to other attributes and may be considered more “independent” than Orientation-related attributes.
 
 ### 1b-iv: Scatterplots of Class and Specific Attributes ###
 
-Next, I was to produce scatterplots between the Class variable and Orientation 2, Depth, and Area. I used a Wes Anderson pallet on my scatterplots and adjusted the size and transparency of the dots to allow a visual representation of each class' density. Further, I adjusted the jitter, else the dots would lie atop each other, and I felt that did little to represent reality.
+Next, I was to produce scatterplots between the Class variable and Orientation 2, Depth, and Area. I used a Wes Anderson pallet on my scatterplots and adjusted the size and transparency of the dots to allow a visual representation of each class' density. Further, I adjusted the jitter, else the dots would lie atop each other, and I felt that did little to represent reality (Figure 2).
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter o2 meh.png">
 <img class="ui image" src="../images/DMA images/1/scatter o2 swap.png"></div>
+*Figure 2: left- no jitter; right- jitter.*
 
-I explored various ways to visualize these scatterplots (Figure 4), used transparency and larger dots to allow each class’ density to show, and adjusted the jitter. Without these adjustments, scatterplots comparing a discrete variable (Class) with a continuous variable (other attributes) are both misleading and uninteresting, due to overplotting (Figure 4, Row 1). Something notable about these adjustments is the difference in plots with Orientation 2. If you switch the axes of the plots (y=Class), the scale on which Orientation 2 is measured changes from the original, unless jitter is very low (0.01), and cuts out data (Figure 4, Row 2). The other plots with the same parameters remain the same. This is where it would be useful to know more about the dataset, as it isn’t apparent what these attributes relate to in the physical world, or how they are being measured. To truly engage with and understand data, we should know at least those details.
-
+<div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter o2 swap.png"></div>
+*Figure 3*
 
-Class compared with Orientation2 (Figure 5) varies the most of the three scatterplots. The points are in cluster-esque arrangements, with most points across all classes falling below the 0.14 measurement, and for A-D, below 0.13. Class E is the only Class with any points above 0.15. This indicates a low positive correlation, thus Orientation2 and Class have some dependency on each other.
+Class compared with Orientation2 (Figure 3) varies the most of the three scatterplots. The points are in cluster-esque arrangements, with most points across all classes falling below the 0.14 measurement, and for A-D, below 0.13. Class E is the only Class with any points above 0.15. This indicates a low positive correlation, thus Orientation2 and Class have some dependency on each other.
 
+<div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter depth swap.png"></div>
+*Figure 4*
 
-Examining the distribution of Class in the Depth attribute (Figure 6), there are apparent bands of points. There’s a marked decline in Depth as we examine the classes, with most points for A, B, and C toward the upper limit, then dropping in D and E. This indicates Depth has a negative correlation, and Depth and Class have a moderate negative dependency.
+Examining the distribution of Class in the Depth attribute (Figure 4), there are apparent bands of points. There’s a marked decline in Depth as we examine the classes, with most points for A, B, and C toward the upper limit, then dropping in D and E. This indicates Depth has a negative correlation, and Depth and Class have a moderate negative dependency.
 
+<div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter area swap.png"></div>
+*Figure 5*
 
-Class compared to LeafArea (Figure 7) has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low positive correlation and weak dependency between LeafArea and Class.
+Class compared to LeafArea (Figure 5) has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low positive correlation and weak dependency between LeafArea and Class.
 
 ### 1c: General Conclusions ###
 
 The most significant attributes are Orientation0, Orientation6, and Depth. Examining all correlations (calculated in 1B) along with other evidence (histograms, etc.), all Orientations have several moderate-to-strong correlations (±0.3-1.0). Orientation0 and Orientation6 have the most moderate-to-strong correlations (all Orientations and Depth). For non-Orientation attributes, Depth has the most moderate-to-strong relationships (CentroidY, Orientations 0-1, and Orientations 6-9). The least significant are CentroidX, LeafHue, and LeafWeight. CentroidX and LeafHue only have two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own.
 
-### 1d: Dealing with Missing Values ###
+### 1d: Dealing with Missing Values ###\
 ### 1d-i: Replacing the Missing Values with 0, Mean, and Median ###
 
 ### 1d-ii: Comparing Replacement Approaches ###
 
-Replacing missing data with zero, attribute means, or medians1 can be useful, especially considering that many algorithms automatically drop any row or instance missing values. However, several values are missing, results will be skewed. Other risks include outliers (rare, very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
+Replacing missing data with zero, attribute means, or medians can be useful (referred to elsewhere as “zeroset,” “meanset,” and “medianset,” respectively.), especially considering that many algorithms automatically drop any row or instance missing values. However, several values are missing, results will be skewed. Other risks include outliers (rare: very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
 
 ### 1e: Attribute Transformation ###
 
-When attributes are measured differently, it’s hard to compare them. Transforming them allows them to occupy the same scale, so they are comparable. MeanCenter performs centring, which subtracts the attribute’s mean from its column. Normalization subtracts the attribute’s minimum from its column, and divides that by the attribute’s range. The goal is to scale the attribute’s values from 0- 1. Standardization centres and scales the attribute’s instances, with the goal of having a mean of 0 and standard deviation of 1. Scaling divides centred values by the attribute’s standard deviation. Each technique changes the scale of the x-axis and relocates the data on it. Y-axis changes are minimal.
+When attributes are measured differently, it’s hard to compare them. Transforming them allows them to occupy the same scale, so they are comparable. MeanCenter performs centring, which subtracts the attribute’s mean from its column. Normalization subtracts the attribute’s minimum from its column, and divides that by the attribute’s range. The goal is to scale the attribute’s values from 0-1. Standardization centres and scales the attribute’s instances, with the goal of having a mean of 0 and standard deviation of 1. Scaling divides centred values by the attribute’s standard deviation. Each technique changes the scale of the x-axis and relocates the data on it. Y-axis changes are minimal.
 
 I visualized LeafHue, as it has a mostly normal distribution (Figure 8)2. Of the techniques, normalization shows the least change in Class distribution amongst the bars. These techniques transformed the meanset and medianset’s means, medians, and modes to the same values (mean centering:0; standardization: 0; normalization: 0.004), which usually indicates a perfect-normal
 distribution of data. Examining the transformed datasets, we see why histograms of meanset and medianset’s mean centring and standardization look similar and normally distributed, while normalization doesn’t. Similarly, zeroset’s mean and median were transformed to 0 during mean centring and standardization, and 0.004 in normalization, though mode remains near the minimum.
