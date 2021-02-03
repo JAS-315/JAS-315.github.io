@@ -99,7 +99,7 @@ Class compared with Orientation2 (Figure 3) varies the most of the three scatter
 Examining the distribution of Class in the Depth attribute (Figure 4), there are apparent bands of points. There’s a marked decline in Depth as we examine the classes, with most points for A, B, and C toward the upper limit, then dropping in D and E. This indicates Depth has a negative correlation, and Depth and Class have a moderate negative dependency.
 
 <div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/1/scatter area lswap.png"></div>
+<img class="ui image" src="../images/DMA images/1/scatter larea swap.png"></div>
 *Figure 5*
 
 Class compared to LeafArea (Figure 5) has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low positive correlation and weak dependency between LeafArea and Class.
@@ -108,10 +108,7 @@ Class compared to LeafArea (Figure 5) has similar bands to Depth. Most points fa
 
 The most significant attributes are Orientation0, Orientation6, and Depth. Examining all correlations (calculated in 1b) along with other evidence (histograms, etc.), all Orientations have several moderate-to-strong correlations (±0.3-1.0). Orientation0 and Orientation6 have the most moderate-to-strong correlations (all Orientations and Depth). For non-Orientation attributes, Depth has the most moderate-to-strong relationships (CentroidY, Orientations 0-1, and Orientations 6-9). The least significant are CentroidX, LeafHue, and LeafWeight. CentroidX and LeafHue only have two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own.
 
-### 1d: Dealing with Missing Values ### \
-### 1d-i: Replacing the Missing Values with 0, Mean, and Median ###
-
-### 1d-ii: Comparing Replacement Approaches ###
+### 1d: Replacing the Missing Values with 0, Mean, and Median, and Comparing Approaches ###
 
 Replacing missing data with zero, attribute means, or medians can be useful (referred to elsewhere as “zeroset,” “meanset,” and “medianset,” respectively.), especially considering that many algorithms automatically drop any row or instance missing values. However, several values are missing, results will be skewed. Other risks include outliers (rare: very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
 
@@ -119,8 +116,7 @@ Replacing missing data with zero, attribute means, or medians can be useful (ref
 
 When attributes are measured differently, it’s hard to compare them. Transforming them allows them to occupy the same scale, so they are comparable. MeanCenter performs centring, which subtracts the attribute’s mean from its column. Normalization subtracts the attribute’s minimum from its column, and divides that by the attribute’s range. The goal is to scale the attribute’s values from 0-1. Standardization centres and scales the attribute’s instances, with the goal of having a mean of 0 and standard deviation of 1. Scaling divides centred values by the attribute’s standard deviation. Each technique changes the scale of the x-axis and relocates the data on it. Y-axis changes are minimal.
 
-I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The original mean is 61.761, median is 61.838, and mode is 56.844). Of the techniques, normalization shows the least change in Class distribution amongst the bars. These techniques transformed the meanset and medianset’s means, medians, and modes to the same values (mean centering:0; standardization: 0; normalization: 0.004), which usually indicates a perfect-normal distribution of data. Examining the transformed datasets, we see why histograms of meanset and medianset’s mean centring and standardization look similar and normally distributed, while normalization doesn’t. Similarly, zeroset’s mean and median were transformed to 0 during mean centring and standardization, and 0.004 in normalization, though mode remains near the minimum (as mentioned before, I was concerned with skewing the data by replacing missing values with zero, and here we can see why, as
-significant outliers have been introduced).
+I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The original mean is 61.761, median is 61.838, and mode is 56.844). Of the techniques, normalization shows the least change in Class distribution amongst the bars. These techniques transformed the meanset and medianset’s means, medians, and modes to the same values (mean centering:0; standardization: 0; normalization: 0.004), which usually indicates a perfect-normal distribution of data. Examining the transformed datasets, we see why histograms of meanset and medianset’s mean centring and standardization look similar and normally distributed, while normalization doesn’t. Similarly, zeroset’s mean and median were transformed to 0 during mean centring and standardization, and 0.004 in normalization, though mode remains near the minimum (as mentioned before, I was concerned with skewing the data by replacing missing values with zero, and here we can see why, as significant outliers have been introduced).
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/lhue zero.png">
@@ -134,7 +130,8 @@ significant outliers have been introduced).
 <img class="ui image" src="../images/DMA images/1/norm med.png">
 <img class="ui image" src="../images/DMA images/1/std zero.png">
 <img class="ui image" src="../images/DMA images/1/std mean.png">
-<img class="ui image" src="../images/DMA images/1/std med.png"></div>
+<img class="ui image" src="../images/DMA images/1/std med.png"></div> \
+*Figure 6*
 
 ### 1f: Attribute/Instance Selection ### \
 ### 1f-i: Attribute and Instance Deletion Strategies for Missing Values ###
@@ -162,22 +159,36 @@ I standardized the data then calculated the PCs in a correlation matrix using pr
 ## Part 2: Clustering (R) ## \
 ### 2a: Using Hierarchical, K-Means, and PAM to Create Classifications ###
 
-<img class="ui medium left floated rounded image" src="../images/DMA images/2/clustersx4 scale means.png"> As K-Means clustering doesn’t allow missing values, I initially omitted them in advance. This left 271 instances amongst 18 variables, which I then scaled. This approach reduced all Class representations unevenly by 50-83%, so it wasn’t optimal. Considering this, I again used deletionset, which resulted in the removal of 20 instances (spread more evenly over each Class) and one attribute. I scaled the numeric data, added the Class attribute back in, then the clusters. I attempted several combinations of attributes for the x and y axes of the plots (Figure 9) and studied all pairs as plots to try to determine the best pairing. Clusplot uses PCA to determine the x and y variables for the plots, and colour codes the clusters by density (low to high: blue, green, red, purple). This is the way I prefer to visualize the plots.
+<div class="ui medium rounded images">
+<img class="ui image" src="../images/DMA images/2/clustersx4 scale means.png"></div> \
+*Figure 7*
 
-WHAT IMAGE <img class="ui medium left floated rounded image" src="../images/DMA images/2/clustersx4 scale means.png"> Considering density, none of the plots match exactly, but PAM and KMeans most closely resemble the original densities (3 low, 2 high). Considering sizes, again, none match. K-Means is closest, and HCA and PAM are least similar, as both have one tiny cluster. Examining the confusion matrices (Figure 10), it’s hard to establish accuracy, as it’s not given that the
-predictions (1-5) automatically fall on the Class’ diagonal (A-E). Because of this, the predictions should be permuted to maximize the values along the diagonal. The diagonal’s sum is then divided by the total instances to establish
-each algorithm’s accuracy. This approach produced the following accuracies: HCA: 29%; K-Means: 39%; and PAM: 36%. With these observations in mind, K-Means still seems best approach.
+As K-Means clustering doesn’t allow missing values, I initially omitted them in advance. This left 271 instances amongst 18 variables, which I then scaled. This approach reduced all Class representations unevenly by 50-83%, so it wasn’t optimal. Considering this, I again used deletionset, which resulted in the removal of 20 instances (spread more evenly over each Class) and one attribute. I scaled the numeric data, added the Class attribute back in, then the clusters. I attempted several combinations of attributes for the x and y axes of the plots (Figure 7) and studied all pairs as plots to try to determine the best pairing. Clusplot uses PCA to determine the x and y variables for the plots, and colour codes the clusters by density (low to high: blue, green, red, purple). This is the way I prefer to visualize the plots.
+
+WHAT IMAGE <div class="ui medium rounded images">
+<img class="ui image" src="../images/DMA images/2/clustersx4 scale means.png"></div> \
+*Figure 8*
+
+Considering density, none of the plots match exactly, but PAM and KMeans most closely resemble the original densities (3 low, 2 high). Considering sizes, again, none match. K-Means is closest, and HCA and PAM are least similar, as both have one tiny cluster. Examining the confusion matrices (Figure 8), it’s hard to establish accuracy, as it’s not given that the
+predictions (1-5) automatically fall on the Class’ diagonal (A-E). Because of this, the predictions should be permuted to maximize the values along the diagonal. The diagonal’s sum is then divided by the total instances to establish each algorithm’s accuracy. This approach produced the following accuracies: HCA: 29%; K-Means: 39%; and PAM: 36%. With these observations in mind, K-Means still seems best approach.
 
 ### 2b: Exploring Optimisation Techniques ###
 
-<img class="ui medium left floated rounded image" src="../images/DMA images/2/cluster test hca method.png"> I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts)6, and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figures 11-15).
+<div class="ui medium rounded images">
+<img class="ui image" src="../images/DMA images/2/cluster test hca method.png"></div> \
+*Figure 9*
+
+I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts)6, and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figures 11-15).
 
 <div class="ui large rounded images">
 <img class="ui image" src="../images/DMA images/2/cluster test km iter.png">
 <img class="ui image" src="../images/DMA images/2/cluster test km nstart.png"></div>
 <img class="ui image" src="../images/DMA images/2/cluster test km algorithms.png">
 
-<img class="ui medium left floated rounded image" src="../images/DMA images/2/cluster test pam various.png"> I had many more confusion matrices (Figure 17) than in the previous section, thus it wasn’t as straightforward. A practical reason to examine confusion matrices is to discern clusters that aren’t visible on a plot, as is the case for HCA’s Single, Average, Median, and Centroid methods (Figure 11). Hoping to find a creative solution, I considered the percentage of overall difference between each experiment’s results and the original Class. I calculated this by dividing the predicted cluster vector by that of the original Class, then subtracting 1 from the resulting vector and multiplying the result by 100 (Figure 16). I realized this approach didn’t prove terribly beneficial, only after investing a lot of time.
+<div class="ui medium rounded images">
+<img class="ui image" src="../images/DMA images/2/cluster test pam various.png"></div>
+
+I had many more confusion matrices (Figure 17) than in the previous section, thus it wasn’t as straightforward. A practical reason to examine confusion matrices is to discern clusters that aren’t visible on a plot, as is the case for HCA’s Single, Average, Median, and Centroid methods (Figure 11). Hoping to find a creative solution, I considered the percentage of overall difference between each experiment’s results and the original Class. I calculated this by dividing the predicted cluster vector by that of the original Class, then subtracting 1 from the resulting vector and multiplying the result by 100 (Figure 16). I realized this approach didn’t prove terribly beneficial, only after investing a lot of time.
 
 <img class="ui image" src="../images/DMA images/2/percent diff bw actual and predicted.PNG">
 
