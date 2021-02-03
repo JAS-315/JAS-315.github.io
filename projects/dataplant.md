@@ -17,6 +17,7 @@ labels:
   - Classification
 summary: A project in three parts: data visualisation and pre-processing, clustering, and classification.
 ---
+
 There were quicte a few steps to this project. The first section addresses data visualisation and pre-processing. I started by finding the centrality and dispersion measurements, as well as the number of missing values per attribute (not pictured). I then produced histograms for each attribute. 
 
 As is my nature, I enjoyed exploring creative ways of doing things. After importing the attributes from the dataset, I wrote an algorithm to automate creation. It used the attribute column headers as titles on each histogram and a while statement with a variable (in this case 18, as there were 18 attributes) to determine when it should terminate. 
