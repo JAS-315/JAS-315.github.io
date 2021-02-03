@@ -130,7 +130,8 @@ I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The orig
 <img class="ui image" src="../images/DMA images/1/norm med.png">
 <img class="ui image" src="../images/DMA images/1/std zero.png">
 <img class="ui image" src="../images/DMA images/1/std mean.png">
-<img class="ui image" src="../images/DMA images/1/std med.png"></div> \ *Figure 6*
+<img class="ui image" src="../images/DMA images/1/std med.png"></div>
+*Figure 6*
 
 ### 1f: Attribute/Instance Selection \ 1f-i: Attribute and Instance Deletion Strategies for Missing Values ###
 
