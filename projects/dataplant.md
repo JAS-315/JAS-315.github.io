@@ -10,7 +10,11 @@ labels:
   - R
   - Weka
   - Principal Component Analysis
-
+  - Pre-processing
+  - Analysis
+  - Mining
+  - Clustering
+  - Classification
 summary: A project in three parts: data visualisation and pre-processing, clustering, and classification.
 ---
 
