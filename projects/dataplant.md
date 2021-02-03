@@ -225,7 +225,7 @@ WHAT IMAGE
 
 Though clusplot uses the first two Principal Components for the axes and I scaled each dataset, PCAset and zeroset’s points look different as do their scales, as their axes-components explain less than the others (Figure 20). As previously noted, replacing missing values with zero, means, or median can skew results, as seen on zeroset’s plot. Deletionset has the closest matching densities, but examining the confusion matrices (Figure 19), it has significantly less predicted instances in clusters 1 and 5. This is also true of zeroset’s predicted clusters 2 and 3; meanset’s cluster 4; and medianset’s clusters 3 and 4. From this, zeroset and medianset are unlikely to have the highest accuracies. The accuracy measurements (Figure 21) prove this supposition and my initial predictions to be true. Highest to lowest are: PCAset, deletionset, meanset, zeroset, and medianset.
 
-<img class="ui image" src="../images/DMA images/2/c4 accuracy scale.png">
+<img class="ui image" src="../images/DMA images/2/c4 accuracy scale.PNG">
 *Figure 18: Accuracy Results.*
 
 ## Part 3: Classification (Weka) ##
