@@ -42,25 +42,5 @@ Last, comparing Class and Leaf Area, the scatterplot has similar bands to Depth.
 
 In considering all correlations along with other evidence, such as the histograpms, the most significant attributes are Orientations 0 and 6, and Depth. While all of the Orientation-attributes have several moderate-to-strong correlations (±0.3-1.0), Orientations 0 and 6 have such with all other Orientations, as well as Depth. For non-Oriengation attributes, Depth has the most moderate-to-strong relationships (CentroidY, Orientations 0-1, and Orientations 6-9). The least significant are CentroidX, LeafHue, and LeafWeight. CentroidX and LeafHue only have
 two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own.
- 
-# <video width="720" height="405" controls>
-#     <source src="../images/pygame demo.mp4" type="video/mp4">
-# </video>
-
-
-# <div class="ui medium rounded images">
-#   <img class="ui image" src="../images/pyfighter title.png">
-#   <img class="ui image" src="../images/pyfighter wave.png">
-# </div>
-
-
-# <img class="ui medium centered rounded image" src="../images/pyfighter boss 1.png">
-
-# <div class="ui small rounded images">
-#   <img class="ui image" src="../images/pyfighter boss 2.png">
-#   <img class="ui image" src="../images/pyfighter boss 3.png">
-#   <img class="ui image" src="../images/pyfighter boss 4.png">
-#   <img class="ui image" src="../images/pyfighter boss 5.png">
-# </div>
 
 
