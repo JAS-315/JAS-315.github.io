@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/data-ex1.png
+image: images/dataex1.png
 title: Data Modelling Example
 permalink: projects/dataplant
 # All dates must be YYYY-MM-DD format!
