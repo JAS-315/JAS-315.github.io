@@ -22,11 +22,11 @@ There were quicte a few steps to this project. The first section addresses data 
 
 ## Description, Visualisation, and Pre-Processing (R)
 
-### 1a: Exploring the Data ###
+### 1a: Exploring the Data
 
 I started by finding the centrality and dispersion measurements, as well as the number of missing values per attribute (not pictured).
 
-### 1b: Exploring the Relationship Between Attributes and Between Attributes and Class ###
+### 1b: Exploring the Relationship Between Attributes and Between Attributes and Class
 
 I then produced histograms for each attribute (Figure 1). As is my nature, I enjoyed exploring creative ways of doing things. After importing the attributes from the dataset, I wrote an algorithm to automate creation. It used the attribute column headers as titles on each histogram and a while statement with a variable (in this case 18, as there were 18 attributes) to determine when it should terminate.
 
@@ -60,7 +60,7 @@ Considering the histograms along with the centrality and dispersion calculations
 
 Considering the data from the centrality and dispersion calculations, we should see this or very close to it for all Orientations, at least. However, examining the histograms, Orientation0, and Orientation5 have negative skews, while Orientation2, Orientation3, Orientation4, Orientation8, Orientation9, and Depth have positive skews. Outliers are most prominent for Orientations 2-4 and 7-9, as well as LeafArea and LeafHue. LeafWeight has the most dissimilar distribution, which is expected with over with half the instances missing. The distributions are generally normal and somewhat symmetrical for CentroidX, Width, Orientation1, Orientation6, Orientation7, LeafArea, and LeafHue. Exceptions to the above are possible bimodal distributions in CentroidY and Mass.
 
-### 1b-i: Calculating Specific Correlations ###
+### 1b-i: Calculating Specific Correlations
 
 According to the correlation coefficients: Orientation1 and Orientation7 have a very strong negative correlation-- when one attribute increases, the other decreases. Mass and Orientation0 have a very weak negative correlation, but we can make a reserved judgement that when one attribute increases, the other decreases. Orientation7 and Orientation8 have a very strong positive correlation-- when one attribute increases, the other does as well. Having examined 40% of the Orientation variables, we see the possibility that the Orientation attributes are dependent on each other, but not necessarily other variables.
 
@@ -68,17 +68,17 @@ According to the correlation coefficients: Orientation1 and Orientation7 have a 
 **Mass and Orientation0:** -0.08768968\
 **Orientation7 and Orientation8:** 0.9291126\
 
-### 1b-ii: The Two Most Correlated Variables ###
+### 1b-ii: The Two Most Correlated Variables
 
 **Strongest Correlation-Orientation8 and Orientation9:** 0.9605505\
 Having now examined 50% of the Orientation attributes and considering the results of 1Bi(iiii), the case for Orientation attributes having linear dependencies with each other is strengthened, though we cannot confidently comment on their relationship with non-Orientation attributes.
 
-### 1b-iii: The Two Least Correlated Variables ###
+### 1b-iii: The Two Least Correlated Variables
 
 **Weakest Correlation-Depth and LeafArea:** 0.0005190327\
 Having now examined 38% of the remaining non-Orientation attributes, the results indicate the possibility that non-Orientation attributes have weak or no correlation to other attributes and may be considered more “independent” than Orientation-related attributes.
 
-### 1b-iv: Scatterplots of Class and Specific Attributes ###
+### 1b-iv: Scatterplots of Class and Specific Attributes
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter o2 meh.png">
@@ -105,15 +105,15 @@ Examining the distribution of Class in the Depth attribute (Figure 4), there are
 
 Class compared to LeafArea (Figure 5) has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low positive correlation and weak dependency between LeafArea and Class.
 
-### 1c: General Conclusions ###
+### 1c: General Conclusions
 
 The most significant attributes are Orientation0, Orientation6, and Depth. Examining all correlations (calculated in 1b) along with other evidence (histograms, etc.), all Orientations have several moderate-to-strong correlations (±0.3-1.0). Orientation0 and Orientation6 have the most moderate-to-strong correlations (all Orientations and Depth). For non-Orientation attributes, Depth has the most moderate-to-strong relationships (CentroidY, Orientations 0-1, and Orientations 6-9). The least significant are CentroidX, LeafHue, and LeafWeight. CentroidX and LeafHue only have two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own.
 
-### 1d: Replacing the Missing Values with 0, Mean, and Median, and Comparing Approaches ###
+### 1d: Replacing the Missing Values with 0, Mean, and Median, and Comparing Approaches
 
 Replacing missing data with zero, attribute means, or medians can be useful (referred to elsewhere as “zeroset,” “meanset,” and “medianset,” respectively.), especially considering that many algorithms automatically drop any row or instance missing values. However, several values are missing, results will be skewed. Other risks include outliers (rare: very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
 
-### 1e: Attribute Transformation ###
+### 1e: Attribute Transformation
 
 When attributes are measured differently, it’s hard to compare them. Transforming them allows them to occupy the same scale, so they are comparable. MeanCenter performs centring, which subtracts the attribute’s mean from its column. Normalization subtracts the attribute’s minimum from its column, and divides that by the attribute’s range. The goal is to scale the attribute’s values from 0-1. Standardization centres and scales the attribute’s instances, with the goal of having a mean of 0 and standard deviation of 1. Scaling divides centred values by the attribute’s standard deviation. Each technique changes the scale of the x-axis and relocates the data on it. Y-axis changes are minimal.
 
@@ -135,15 +135,15 @@ I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The orig
 *Figure 6*
 SORT THE ARRANGEMENT
 
-### 1f: Attribute/Instance Selection \ 1f-i: Attribute and Instance Deletion Strategies for Missing Values ###
+### 1f: Attribute/Instance Selection \ 1f-i: Attribute and Instance Deletion Strategies for Missing Values
 
 I examined the amount of missing values in each column and row and decided to outright remove any attribute that had over 25% and any instance that had over 10% missing values. This left very few missing values in the data. I replaced these with the means of each attribute, similar to the example from section 1d-i (referred to as “deletionset,” elsewhere).
 
-### 1f-ii: Using Correlations to Reduce the Number of Attributes ###
+### 1f-ii: Using Correlations to Reduce the Number of Attributes
 
 I removed correlated attributes, which created a dataset of only LeafArea and LeafHue. I used na.omit to remove any missing values, which left 701 instances intact.
 
-### 1f-iii: Using Principal Component Analysis (PCA) to Create a Dataset with Seven Attributes ###
+### 1f-iii: Using Principal Component Analysis (PCA) to Create a Dataset with Seven Attributes
 
 I experimented with the raw data and missing values before deciding how to approach this. I found if I left the missing values in the data, I wasn’t able to perform prcomp, without using na.omit during it. Further, if I:
 - …used na.omit during standardization, when projecting the data:
@@ -157,8 +157,8 @@ Neither approach is ideal, as 63% of instances are lost. Regardless of approach,
 
 I standardized the data then calculated the PCs in a correlation matrix using prcomp, which I chose because prcomp uses singular value decomposition, giving more accuracy to results. Finally, I projected the data using the returned values. This reduced the dimensions, resulting in a dataset with only the specified number of Principal Components (7). I did this again for 10 PCs5, because such is required in Part 2. I have summarized one way to perform PCA, without describing everything I could have explored during each step. However, considering a screeplot, cumulative screeplot plot, and summary for this dataset, I, personally, would have reduced to 8 Principal Components. 7 shows 93% variability; 10 shows 98%; but 8 shows 95%. After 95%, there is minimal variation to be achieved, therefore 8 is ideal.
 
-## Part 2: Clustering (R) ## \
-### 2a: Using Hierarchical, K-Means, and PAM to Create Classifications ###
+## Part 2: Clustering (R)
+### 2a: Using Hierarchical, K-Means, and PAM to Create Classifications
 
 <img class="ui image" src="../images/DMA images/2/clustersx4 scale means.png">
 *Figure 7: Initial Clustering Plots to Examine Effectiveness of Algorithms.*
@@ -172,7 +172,7 @@ WHAT IMAGE
 Considering density, none of the plots match exactly, but PAM and K-Means most closely resemble the original densities (3 low, 2 high). Considering sizes, again, none match. K-Means is closest, and HCA and PAM are least similar, as both have one tiny cluster. Examining the confusion matrices (Figure 8), it’s hard to establish accuracy, as it’s not given that the
 predictions (1-5) automatically fall on the Class’ diagonal (A-E). Because of this, the predictions should be permuted to maximize the values along the diagonal. The diagonal’s sum is then divided by the total instances to establish each algorithm’s accuracy. This approach produced the following accuracies: HCA: 29%; K-Means: 39%; and PAM: 36%. With these observations in mind, K-Means still seems best approach.
 
-### 2b: Exploring Optimisation Techniques ###
+### 2b: Exploring Optimisation Techniques
 
 <img class="ui image" src="../images/DMA images/2/cluster test hca method.png">
 *Figure 9: Hierarchical Clustering Methods*
@@ -213,7 +213,7 @@ If this comes up in the future, I would use Rand Index, as it was developed for 
   <img class="ui image" src="../images/DMA images/2/accuracy results.PNG">
   *Figure 15: Accuracy Results*
 
-### 2c: Using One Clustering Technique on Alternative Datasets ###
+### 2c: Using One Clustering Technique on Alternative Datasets
 I chose K-Means clustering using 50 iterations, 10 starts, and the Hartigan-Wong algorithm. I imagined PCAset would have the highest accuracy and zeroset the lowest, having expressed my opinion of both methods’ reliability elsewhere.
 
 <img class="ui image" src="../images/DMA images/2/c4 clusters.png">
@@ -228,9 +228,9 @@ Though clusplot uses the first two Principal Components for the axes and I scale
 <img class="ui image" src="../images/DMA images/2/c4 accuracy scale.PNG">
 *Figure 18: Accuracy Results.*
 
-## Part 3: Classification (Weka) ##
+## Part 3: Classification (Weka)
 
-### 3a: Using ZeroR, OneR, NaïveBayes, IBk (k-NN), and J48 (C4.5) for Classification ###
+### 3a: Using ZeroR, OneR, NaïveBayes, IBk (k-NN), and J48 (C4.5) for Classification
 
 FIGURE OUT THIS CHART
 *Figure 19: Confusion Matrices and Abridged Classification Summaries for ZeroR, OneR, Naïve Bayes, and J48 Algorithms.*
@@ -244,7 +244,7 @@ For this dataset, J48 produced the best results (98.4%, Figure 22). I find it od
 - IBk: predicts the class which an instance belongs to by the closest k-neighbour’s class.
 - J48: builds a “tree” using entropy calculations to decide which attributes should be split into branches (>0 entropy), classed as nodes (highest gain), or leaves (0 entropy). Uses the constructed tree to classify.
 
-### 3b: Choose One Algorithm to Explore Optimisation Techniques ###
+### 3b: Choose One Algorithm to Explore Optimisation Techniques
 
 Using IBk, I changed the number of k (introducing k-number of neighbours) to 1, 3, 5, and 10, and distance measurement to either Euclidean or Manhattan (Figure 23; Distances explained in footnote 6). With Euclidean Distance, the classifier’s accuracy decreased as k increased. There was an immediate increase just by changing the distance to Manhattan. Accuracy was 99.96% at 1 and 3 neighbours, then increased to 100% at 5 and 10.
 
@@ -260,7 +260,7 @@ Increasing k to 1, 10, 15, and 20 (Figure 24), Euclidean Distance’s accuracy i
 *Euclidean Distance with 1, 10, 15, 20 Neighbours, Respectively.*
 *Manhattan Distance with 1, 10, 15, 20 Neighbours, Respectively.*
 
-### 3c: Choose One Algorithm and Use if on Alternate Datasets ###
+### 3c: Choose One Algorithm and Use if on Alternate Datasets
 
 <img class="ui image" src="../images/DMA images/3/NB pca10 confusion matrix.PNG">
 *Figure 22: Confusion Matrices and Abridged Classification Summaries for Dataset of 10 Principal Components ("PCAset").*
