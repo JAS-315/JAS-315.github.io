@@ -22,7 +22,7 @@ There were quicte a few steps to this project. The first section addresses data 
 
 ## Descrption, Visualisation, and Pre-Processing (R)
 
-###1a: Exploring the Data### 
+### 1a: Exploring the Data ### 
 
 I started by finding the centrality and dispersion measurements, as well as the number of missing values per attribute (not pictured). 
 
