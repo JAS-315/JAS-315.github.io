@@ -15,7 +15,7 @@ labels:
   - Mining
   - Clustering
   - Classification
-summary: A project in three parts: data visualisation and preprocessing, clustering, and classification.
+summary: A project in three parts, including data visualisation and preprocessing, clustering, and classification.
 ---
 
 There were quicte a few steps to this project. The first section addresses data visualisation and pre-processing. I started by finding the centrality and dispersion measurements, as well as the number of missing values per attribute (not pictured). I then produced histograms for each attribute. 
