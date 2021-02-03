@@ -79,12 +79,12 @@ Having now examined 38% of the remaining non-Orientation attributes, the results
 
 ### 1b-iv: Scatterplots of Class and Specific Attributes ###
 
-Next, I was to produce scatterplots between the Class variable and Orientation 2, Depth, and Area. I used a Wes Anderson pallet on my scatterplots and adjusted the size and transparency of the dots to allow a visual representation of each class' density. Further, I adjusted the jitter, else the dots would lie atop each other, and I felt that did little to represent reality (Figure 2).
-
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter o2 meh.png">
 <img class="ui image" src="../images/DMA images/1/scatter o2 swap.png"></div>
 *Figure 2: left- no jitter; right- jitter.*
+
+Next, I was to produce scatterplots between the Class variable and Orientation 2, Depth, and Area. I used a Wes Anderson pallet on my scatterplots and adjusted the size and transparency of the dots to allow a visual representation of each class' density. Further, I adjusted the jitter, else the dots would lie atop each other, and I felt that did little to represent reality (Figure 2).
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter o2 swap.png"></div>
@@ -99,16 +99,16 @@ Class compared with Orientation2 (Figure 3) varies the most of the three scatter
 Examining the distribution of Class in the Depth attribute (Figure 4), there are apparent bands of points. There’s a marked decline in Depth as we examine the classes, with most points for A, B, and C toward the upper limit, then dropping in D and E. This indicates Depth has a negative correlation, and Depth and Class have a moderate negative dependency.
 
 <div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/1/scatter area swap.png"></div>
+<img class="ui image" src="../images/DMA images/1/scatter area lswap.png"></div>
 *Figure 5*
 
 Class compared to LeafArea (Figure 5) has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low positive correlation and weak dependency between LeafArea and Class.
 
 ### 1c: General Conclusions ###
 
-The most significant attributes are Orientation0, Orientation6, and Depth. Examining all correlations (calculated in 1B) along with other evidence (histograms, etc.), all Orientations have several moderate-to-strong correlations (±0.3-1.0). Orientation0 and Orientation6 have the most moderate-to-strong correlations (all Orientations and Depth). For non-Orientation attributes, Depth has the most moderate-to-strong relationships (CentroidY, Orientations 0-1, and Orientations 6-9). The least significant are CentroidX, LeafHue, and LeafWeight. CentroidX and LeafHue only have two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own.
+The most significant attributes are Orientation0, Orientation6, and Depth. Examining all correlations (calculated in 1b) along with other evidence (histograms, etc.), all Orientations have several moderate-to-strong correlations (±0.3-1.0). Orientation0 and Orientation6 have the most moderate-to-strong correlations (all Orientations and Depth). For non-Orientation attributes, Depth has the most moderate-to-strong relationships (CentroidY, Orientations 0-1, and Orientations 6-9). The least significant are CentroidX, LeafHue, and LeafWeight. CentroidX and LeafHue only have two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own.
 
-### 1d: Dealing with Missing Values ###\
+### 1d: Dealing with Missing Values ### \
 ### 1d-i: Replacing the Missing Values with 0, Mean, and Median ###
 
 ### 1d-ii: Comparing Replacement Approaches ###
@@ -119,8 +119,8 @@ Replacing missing data with zero, attribute means, or medians can be useful (ref
 
 When attributes are measured differently, it’s hard to compare them. Transforming them allows them to occupy the same scale, so they are comparable. MeanCenter performs centring, which subtracts the attribute’s mean from its column. Normalization subtracts the attribute’s minimum from its column, and divides that by the attribute’s range. The goal is to scale the attribute’s values from 0-1. Standardization centres and scales the attribute’s instances, with the goal of having a mean of 0 and standard deviation of 1. Scaling divides centred values by the attribute’s standard deviation. Each technique changes the scale of the x-axis and relocates the data on it. Y-axis changes are minimal.
 
-I visualized LeafHue, as it has a mostly normal distribution (Figure 8)2. Of the techniques, normalization shows the least change in Class distribution amongst the bars. These techniques transformed the meanset and medianset’s means, medians, and modes to the same values (mean centering:0; standardization: 0; normalization: 0.004), which usually indicates a perfect-normal
-distribution of data. Examining the transformed datasets, we see why histograms of meanset and medianset’s mean centring and standardization look similar and normally distributed, while normalization doesn’t. Similarly, zeroset’s mean and median were transformed to 0 during mean centring and standardization, and 0.004 in normalization, though mode remains near the minimum.
+I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The original mean is 61.761, median is 61.838, and mode is 56.844). Of the techniques, normalization shows the least change in Class distribution amongst the bars. These techniques transformed the meanset and medianset’s means, medians, and modes to the same values (mean centering:0; standardization: 0; normalization: 0.004), which usually indicates a perfect-normal distribution of data. Examining the transformed datasets, we see why histograms of meanset and medianset’s mean centring and standardization look similar and normally distributed, while normalization doesn’t. Similarly, zeroset’s mean and median were transformed to 0 during mean centring and standardization, and 0.004 in normalization, though mode remains near the minimum (as mentioned before, I was concerned with skewing the data by replacing missing values with zero, and here we can see why, as
+significant outliers have been introduced).
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/lhue zero.png">
@@ -136,10 +136,10 @@ distribution of data. Examining the transformed datasets, we see why histograms 
 <img class="ui image" src="../images/DMA images/1/std mean.png">
 <img class="ui image" src="../images/DMA images/1/std med.png"></div>
 
-### 1f: Attribute/Instance Selection ###
+### 1f: Attribute/Instance Selection ### \
 ### 1f-i: Attribute and Instance Deletion Strategies for Missing Values ###
 
-I examined the amount of missing values in each column and row and decided to outright remove any attribute that had over 25% and any instance that had over 10% missing values. This left very few missing values in the data. I replaced these with the means of each attribute, similar to the example from section 1Di4.
+I examined the amount of missing values in each column and row and decided to outright remove any attribute that had over 25% and any instance that had over 10% missing values. This left very few missing values in the data. I replaced these with the means of each attribute, similar to the example from section 1d-i (referred to as “deletionset,” elsewhere).
 
 ### 1f-ii: Using Correlations to Reduce the Number of Attributes ###
 
@@ -159,8 +159,7 @@ Neither approach is ideal, as 63% of instances are lost. Regardless of approach,
 
 I standardized the data then calculated the PCs in a correlation matrix using prcomp, which I chose because prcomp uses singular value decomposition, giving more accuracy to results. Finally, I projected the data using the returned values. This reduced the dimensions, resulting in a dataset with only the specified number of Principal Components (7). I did this again for 10 PCs5, because such is required in Part 2. I have summarized one way to perform PCA, without describing everything I could have explored during each step. However, considering a screeplot, cumulative screeplot plot, and summary for this dataset, I, personally, would have reduced to 8 Principal Components. 7 shows 93% variability; 10 shows 98%; but 8 shows 95%. After 95%, there is minimal variation to be achieved, therefore 8 is ideal.
 
-## Part 2: Clustering (R) ##
-
+## Part 2: Clustering (R) ## \
 ### 2a: Using Hierarchical, K-Means, and PAM to Create Classifications ###
 
 <img class="ui medium left floated rounded image" src="../images/DMA images/2/clustersx4 scale means.png"> As K-Means clustering doesn’t allow missing values, I initially omitted them in advance. This left 271 instances amongst 18 variables, which I then scaled. This approach reduced all Class representations unevenly by 50-83%, so it wasn’t optimal. Considering this, I again used deletionset, which resulted in the removal of 20 instances (spread more evenly over each Class) and one attribute. I scaled the numeric data, added the Class attribute back in, then the clusters. I attempted several combinations of attributes for the x and y axes of the plots (Figure 9) and studied all pairs as plots to try to determine the best pairing. Clusplot uses PCA to determine the x and y variables for the plots, and colour codes the clusters by density (low to high: blue, green, red, purple). This is the way I prefer to visualize the plots.
