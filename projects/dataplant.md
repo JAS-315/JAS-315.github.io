@@ -41,6 +41,6 @@ For the distribution of Class and Depth, there are apparent bands of points this
 Last, comparing Class and Leaf Area, the scatterplot has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low-positive correslation, thus a weak dependency between Class and Leaf Area. 
 
 In considering all correlations along with other evidence, such as the histograpms, the most significant attributes are Orientations 0 and 6, and Depth. While all of the Orientation-attributes have several moderate-to-strong correlations (±0.3-1.0), Orientations 0 and 6 have such with all other Orientations, as well as Depth. For non-Oriengation attributes, Depth has the most moderate-to-strong relationships (CentroidY, Orientations 0-1, and Orientations 6-9). The least significant are CentroidX, LeafHue, and LeafWeight. CentroidX and LeafHue only have
-two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own.
+two moderate-to-strong correlations (CentroidX: Orientation2-3; LeafHue: Mass and LeafArea). LeafWeight has none, likely because it’s missing over half its instances, which is an indicator of insignificance on its own. 
 
 
