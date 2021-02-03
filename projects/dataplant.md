@@ -170,9 +170,9 @@ each algorithm’s accuracy. This approach produced the following accuracies: HC
 
 ### 2b: Exploring Optimisation Techniques ###
 
-<img class="ui medium left floated rounded image" src="../images/DMA images/2/clusters test hca method.png"> I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts)6, and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figures 11-15).
+<img class="ui medium left floated rounded image" src="../images/DMA images/2/cluster test hca method.png"> I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts)6, and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figures 11-15).
 
-<div class="ui medium rounded images">
+<div class="ui large rounded images">
 <img class="ui image" src="../images/DMA images/2/cluster test km iter.png">
 <img class="ui image" src="../images/DMA images/2/cluster test km nstart.png"></div>
 <img class="ui image" src="../images/DMA images/2/cluster test km algorithms.png">
