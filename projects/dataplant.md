@@ -50,8 +50,9 @@ I removed missing value and used the value of populated rows for each attribute 
 <img class="ui image" src="../images/DMA images/1/histo o9.png">
 <img class="ui image" src="../images/DMA images/1/histo wt.png">
 <img class="ui image" src="../images/DMA images/1/histo area.png">
-<img class="ui image" src="../images/DMA images/1/histo hue.png"></div> \
-*Figure 1*
+<img class="ui image" src="../images/DMA images/1/histo hue.png"></div>
+*Figure 1: Historgrams of Attributes.*
+*Mean: Grey Double-Dashed; Median: Red Dashed; Mode: Blue Dotted Lines.*
 
 I visualised the Class variable by colour and chose the Viridis pallet, as it's not only aesthetically pleasing, but also discernible to those with colour blindness. I represented the mean, median, and mode using colour-blind-safe colours, as well as different lines.
 
@@ -88,19 +89,19 @@ Next, I was to produce scatterplots between the Class variable and Orientation 2
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter o2 swap.png"></div>
-*Figure 3*
+*Figure 3: Class and Orientation 2.*
 
 Class compared with Orientation2 (Figure 3) varies the most of the three scatterplots. The points are in cluster-esque arrangements, with most points across all classes falling below the 0.14 measurement, and for A-D, below 0.13. Class E is the only Class with any points above 0.15. This indicates a low positive correlation, thus Orientation2 and Class have some dependency on each other.
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter depth swap.png"></div>
-*Figure 4*
+*Figure 4: Class and Depth.*
 
 Examining the distribution of Class in the Depth attribute (Figure 4), there are apparent bands of points. There’s a marked decline in Depth as we examine the classes, with most points for A, B, and C toward the upper limit, then dropping in D and E. This indicates Depth has a negative correlation, and Depth and Class have a moderate negative dependency.
 
 <div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter larea swap.png"></div>
-*Figure 5*
+*Figure 5: Class and Leaf Area.*
 
 Class compared to LeafArea (Figure 5) has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low positive correlation and weak dependency between LeafArea and Class.
 
@@ -132,6 +133,7 @@ I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The orig
 <img class="ui image" src="../images/DMA images/1/std mean.png">
 <img class="ui image" src="../images/DMA images/1/std med.png"></div>
 *Figure 6*
+SORT THE ARRANGEMENT
 
 ### 1f: Attribute/Instance Selection \ 1f-i: Attribute and Instance Deletion Strategies for Missing Values ###
 
@@ -158,42 +160,46 @@ I standardized the data then calculated the PCs in a correlation matrix using pr
 ## Part 2: Clustering (R) ## \
 ### 2a: Using Hierarchical, K-Means, and PAM to Create Classifications ###
 
-<div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/2/clustersx4 scale means.png"></div> \
-*Figure 7*
+<img class="ui image" src="../images/DMA images/2/clustersx4 scale means.png">
+*Figure 7: Initial Clustering Plots to Examine Effectiveness of Algorithms.*
 
 As K-Means clustering doesn’t allow missing values, I initially omitted them in advance. This left 271 instances amongst 18 variables, which I then scaled. This approach reduced all Class representations unevenly by 50-83%, so it wasn’t optimal. Considering this, I again used deletionset, which resulted in the removal of 20 instances (spread more evenly over each Class) and one attribute. I scaled the numeric data, added the Class attribute back in, then the clusters. I attempted several combinations of attributes for the x and y axes of the plots (Figure 7) and studied all pairs as plots to try to determine the best pairing. Clusplot uses PCA to determine the x and y variables for the plots, and colour codes the clusters by density (low to high: blue, green, red, purple). This is the way I prefer to visualize the plots.
 
-WHAT IMAGE <div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/2/clustersx4 scale means.png"></div> \
-*Figure 8*
+WHAT IMAGE
+<img class="ui image" src="../images/DMA images/2/.png">
+*Figure 8: Confusion Matrices of Initial Clustering Results.*
 
-Considering density, none of the plots match exactly, but PAM and KMeans most closely resemble the original densities (3 low, 2 high). Considering sizes, again, none match. K-Means is closest, and HCA and PAM are least similar, as both have one tiny cluster. Examining the confusion matrices (Figure 8), it’s hard to establish accuracy, as it’s not given that the
+Considering density, none of the plots match exactly, but PAM and K-Means most closely resemble the original densities (3 low, 2 high). Considering sizes, again, none match. K-Means is closest, and HCA and PAM are least similar, as both have one tiny cluster. Examining the confusion matrices (Figure 8), it’s hard to establish accuracy, as it’s not given that the
 predictions (1-5) automatically fall on the Class’ diagonal (A-E). Because of this, the predictions should be permuted to maximize the values along the diagonal. The diagonal’s sum is then divided by the total instances to establish each algorithm’s accuracy. This approach produced the following accuracies: HCA: 29%; K-Means: 39%; and PAM: 36%. With these observations in mind, K-Means still seems best approach.
 
 ### 2b: Exploring Optimisation Techniques ###
 
-<div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/2/cluster test hca method.png"></div> \
-*Figure 9*
+<img class="ui image" src="../images/DMA images/2/cluster test hca method.png">
+*Figure 9: Hierarchical Clustering Methods*
 
-I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts)6, and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figures 11-15).
+I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts)6, and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figure 10-12).
 
-<div class="ui large rounded images">
 <img class="ui image" src="../images/DMA images/2/cluster test km iter.png">
-<img class="ui image" src="../images/DMA images/2/cluster test km nstart.png"></div>
+*Figure 10: K-Means Clustering, Iteration Experiments.*
+<img class="ui image" src="../images/DMA images/2/cluster test km nstart.png">
+*Figure 11: K-Means Clustering, NStart Experiments*
 <img class="ui image" src="../images/DMA images/2/cluster test km algorithms.png">
+*Figure 12: K-Means Clustering, Algorithm Experiments*
 
-<div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/2/cluster test pam various.png"></div>
 
-I had many more confusion matrices (Figure 17) than in the previous section, thus it wasn’t as straightforward. A practical reason to examine confusion matrices is to discern clusters that aren’t visible on a plot, as is the case for HCA’s Single, Average, Median, and Centroid methods (Figure 11). Hoping to find a creative solution, I considered the percentage of overall difference between each experiment’s results and the original Class. I calculated this by dividing the predicted cluster vector by that of the original Class, then subtracting 1 from the resulting vector and multiplying the result by 100 (Figure 16). I realized this approach didn’t prove terribly beneficial, only after investing a lot of time.
+<img class="ui image" src="../images/DMA images/2/cluster test pam various.png">
+*Figure 13: PAM Clustering, Various Experiments*
 
-<img class="ui image" src="../images/DMA images/2/percent diff bw actual and predicted.PNG">
+I had many more confusion matrices (Figure 17) than in the previous section, thus it wasn’t as straightforward. A practical reason to examine confusion matrices is to discern clusters that aren’t visible on a plot, as is the case for HCA’s Single, Average, Median, and Centroid methods (Figure 9).
 
 FIGURE OUT CONFUSION MATRICES
+*Figure 14: Confusion Matrices, Left to Right*
+*HCA: Methods (Ward.D, Ward.D2, Single, Complete, Average, McQuitty, Median, Centroid).*
+*K-Means: Iterations (4, 10, 500, 100, 200).*
+*K-Means: NStarts (1, 10, 50, 100, 200).*
+*K-Means: Algorithms (Lloyd, MacQueen, Hartigan-Wong with Trace, Hartigan-Wong without Trace).*
 
-If this comes up in the future, I would use Rand Index, as it was developed for external cluster validation. However, I again measured accuracy via permutation of the diagonal values (Figure 18). An oddity is that the accuracy for K-Means 75, 100, and 200 starts are the same, but consulting the confusion matrices (Figure 16), this is an anomaly. From the results, I found for this dataset and algorithms:
+If this comes up in the future, I would use Rand Index, as it was developed for external cluster validation. However, I again measured accuracy via permutation of the diagonal values (Figure 18). An oddity is that the accuracy for K-Means 75, 100, and 200 starts are the same, but consulting the confusion matrices (Figure 14), this is an anomaly. From the results, I found for this dataset and algorithms:
 - HCA:
   - Ward.D was the best method.
 - K-Means:
@@ -205,24 +211,29 @@ If this comes up in the future, I would use Rand Index, as it was developed for 
   - standardization didn’t make much difference.
 
   <img class="ui image" src="../images/DMA images/2/accuracy results.PNG">
+  *Figure 15: Accuracy Results*
 
 ### 2c: Using One Clustering Technique on Alternative Datasets ###
 I chose K-Means clustering using 50 iterations, 10 starts, and the Hartigan-Wong algorithm. I imagined PCAset would have the highest accuracy and zeroset the lowest, having expressed my opinion of both methods’ reliability elsewhere.
 
-<div class="ui medium rounded images">
 <img class="ui image" src="../images/DMA images/2/c4 clusters.png">
-<img class="ui image" src="../images/DMA images/2/cluster test km nstart.png"></div>
+*Figure 16: K-Means Applied to PCAset, Deletionset, Zeroset, Meanset, and Medianset.*
+
+<img class="ui image" src="../images/DMA images/2/cluster test km nstart.png">
+*Figure 17: Confusion Matrices of K-Means Application.*
 WHAT IMAGE
 
 Though clusplot uses the first two Principal Components for the axes and I scaled each dataset, PCAset and zeroset’s points look different as do their scales, as their axes-components explain less than the others (Figure 20). As previously noted, replacing missing values with zero, means, or median can skew results, as seen on zeroset’s plot. Deletionset has the closest matching densities, but examining the confusion matrices (Figure 19), it has significantly less predicted instances in clusters 1 and 5. This is also true of zeroset’s predicted clusters 2 and 3; meanset’s cluster 4; and medianset’s clusters 3 and 4. From this, zeroset and medianset are unlikely to have the highest accuracies. The accuracy measurements (Figure 21) prove this supposition and my initial predictions to be true. Highest to lowest are: PCAset, deletionset, meanset, zeroset, and medianset.
 
 <img class="ui image" src="../images/DMA images/2/c4 accuracy scale.png">
+*Figure 18: Accuracy Results.*
 
-## Part 3: Classification (Weka)
+## Part 3: Classification (Weka) ##
 
 ### 3a: Using ZeroR, OneR, NaïveBayes, IBk (k-NN), and J48 (C4.5) for Classification ###
 
 FIGURE OUT THIS CHART
+*Figure 19: Confusion Matrices and Abridged Classification Summaries for ZeroR, OneR, Naïve Bayes, and J48 Algorithms.*
 
 For this dataset, J48 produced the best results (98.4%, Figure 22). I find it odd, but refreshing, to know two classifiers with very simplistic approaches (J48 and OneR) have the highest accuracies. I have given extremely cursory overviews of all methods employed below.
 - ZeroR: a baseline classification that predicts the majority result from the training set.
@@ -238,14 +249,23 @@ For this dataset, J48 produced the best results (98.4%, Figure 22). I find it od
 Using IBk, I changed the number of k (introducing k-number of neighbours) to 1, 3, 5, and 10, and distance measurement to either Euclidean or Manhattan (Figure 23; Distances explained in footnote 6). With Euclidean Distance, the classifier’s accuracy decreased as k increased. There was an immediate increase just by changing the distance to Manhattan. Accuracy was 99.96% at 1 and 3 neighbours, then increased to 100% at 5 and 10.
 
 <img class="ui image" src="../images/DMA images/3/multi ibk 1 3 5 10.PNG">
+*Figure 20: IBk Results.*
+*Euclidean Distance with 1, 3, 5, 10 Neighbours, Respectively.*
+*Manhattan Distance with 1, 3, 5, 10 Neighbours, Respectively.*
 
 Increasing k to 1, 10, 15, and 20 (Figure 24), Euclidean Distance’s accuracy increased at 20, while Manhattan Distance’s decreased after 15. Thus, the distance measurements have a substantial effect on the predictive ability, and accuracy can be fine-tuned by adjusting the number of kneighbours.
 
 <img class="ui image" src="../images/DMA images/1/multi ibk 1 10 15 20.PNG">
+*Figure 21: IBk Results, Increased K-Neighbours.*
+*Euclidean Distance with 1, 10, 15, 20 Neighbours, Respectively.*
+*Manhattan Distance with 1, 10, 15, 20 Neighbours, Respectively.*
 
 ### 3c: Choose One Algorithm and Use if on Alternate Datasets ###
 
-<img class="ui medium right floated rounded image" src="../images/DMA images/3/NB pca10 confusion matrix.PNG">I used Naive Bayes to classify the datasets and PCAset had the highest accuracy (Figure 25). Since PCA examines all attributes, orders them by highest to lowest variance, and allows us to discard any we find unimportant, PCA is beneficial for predicting potential trends in the data. At 10 PC (Figure 25), over 98% of variation is explained, so this dataset having the highest predictive ability is no surprise. Next, medianset is negligibly higher than meanset (Figure 27), followed by deletionset, (Figure 26) and the least accurate, as I suspected, was zeroset (Figure 27).
+<img class="ui image" src="../images/DMA images/3/NB pca10 confusion matrix.PNG">
+*Figure 22: Confusion Matrices and Abridged Classification Summaries for Dataset of 10 Principal Components ("PCAset").*
+
+I used Naive Bayes to classify the datasets and PCAset had the highest accuracy (Figure 25). Since PCA examines all attributes, orders them by highest to lowest variance, and allows us to discard any we find unimportant, PCA is beneficial for predicting potential trends in the data. At 10 PC (Figure 25), over 98% of variation is explained, so this dataset having the highest predictive ability is no surprise. Next, medianset is negligibly higher than meanset (Figure 27), followed by deletionset, (Figure 26) and the least accurate, as I suspected, was zeroset (Figure 27).
 
 FIGURE OUT CHARTS
 
