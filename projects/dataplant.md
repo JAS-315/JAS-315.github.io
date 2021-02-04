@@ -133,7 +133,7 @@ I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The orig
 *Figure 6: Row 1- LeafHue, Original Generation of Zeroset, Meanset, Medianset.* \
 *Row 2- Mean Centring on Zeroset, Meanset, Medianset.* \
 *Row 3- Normalization on Zeroset, Meanset, Medianset.* \
-*Row 4- Standardization on Zeroset, Meanset, Medianset.* \
+*Row 4- Standardization on Zeroset, Meanset, Medianset.*
 
 ### 1f: Attribute/Instance Selection
 ### 1f-i: Attribute and Instance Deletion Strategies for Missing Values
