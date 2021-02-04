@@ -109,7 +109,7 @@ The most significant attributes are Orientation0, Orientation6, and Depth. Exami
 
 ### 1d: Replacing the Missing Values with 0, Mean, and Median, and Comparing Approaches
 
-Replacing missing data with zero, attribute means, or medians can be useful (referred to elsewhere as “zeroset,” “meanset,” and “medianset,” respectively.), especially considering that many algorithms automatically drop any row or instance missing values. However, if several values are missing, results will be skewed. Other risks include outliers (rare: very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
+Replacing missing data with zero, attribute means, or medians can be useful (referred to elsewhere as “Zeroset,” “Meanset,” and “Medianset,” respectively.), especially considering that many algorithms automatically drop any row or instance missing values. However, if several values are missing, results will be skewed. Other risks include outliers (rare: very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
 
 ### 1e: Attribute Transformation
 
@@ -138,7 +138,7 @@ I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The orig
 ### 1f: Attribute/Instance Selection
 ### 1f-i: Attribute and Instance Deletion Strategies for Missing Values
 
-I examined the number of missing values in each column and row and decided outright to (programmatically) remove any attribute that had over 25% and any instance that had over 10% missing values. This left very few missing values in the data. I replaced these with the means of each attribute, similar to the example from section 1d-i (referred to as “deletionset,” elsewhere).
+I examined the number of missing values in each column and row and decided outright to (programmatically) remove any attribute that had over 25% and any instance that had over 10% missing values. This left very few missing values in the data. I replaced these with the means of each attribute, similar to the example from section 1d-i (referred to as “Deletionset,” elsewhere).
 
 ### 1f-ii: Using Correlations to Reduce the Number of Attributes
 
@@ -170,8 +170,7 @@ I have summarized one way to perform PCA, without describing everything I could 
 
 As K-Means clustering doesn’t allow missing values, I initially omitted them in advance. This left 271 instances amongst 18 variables, which I then scaled. This approach reduced all Class representations unevenly by 50-83%, so it wasn’t optimal. Considering this, I again used deletionset, which resulted in the removal of 20 instances (spread more evenly over each Class) and one attribute. I scaled the numeric data, added the Class attribute back in, then the clusters. I attempted several combinations of attributes for the x and y axes of the plots (Figure 7) and studied all pairs as plots to try to determine the best pairing. Clusplot uses PCA to determine the x and y variables for the plots, and colour codes the clusters by density (low to high: blue, green, red, purple). This is the way I prefer to visualize the plots.
 
-WHAT IMAGE
-<img class="ui image" src="../images/DMA images/2/.png">
+<img class="ui medium right floated rounded image" src="../images/DMA images/2/table scale means.PNG">
 *Figure 8: Confusion Matrices of Initial Clustering Results.*
 
 Considering density, none of the plots match exactly, but PAM and K-Means most closely resemble the original densities (3 low, 2 high). Considering sizes, again, none match. K-Means is closest, and HCA and PAM are least similar, as both have one tiny cluster. Examining the confusion matrices (Figure 8), it’s hard to establish accuracy, as it’s not given that the
