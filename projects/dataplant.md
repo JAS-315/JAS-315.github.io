@@ -71,12 +71,12 @@ According to the correlation coefficients: Orientation1 and Orientation7 have a 
 
 ### 1b-ii: The Two Most Correlated Variables
 
-**Strongest Correlation-Orientation8 and Orientation9:** 0.9605505\
+>**Strongest Correlation-Orientation8 and Orientation9:** 0.9605505\
 Having now examined 50% of the Orientation attributes and considering the results of 1Bi(iiii), the case for Orientation attributes having linear dependencies with each other is strengthened, though we cannot confidently comment on their relationship with non-Orientation attributes.
 
 ### 1b-iii: The Two Least Correlated Variables
 
-**Weakest Correlation-Depth and LeafArea:** 0.0005190327\
+>**Weakest Correlation-Depth and LeafArea:** 0.0005190327\
 Having now examined 38% of the remaining non-Orientation attributes, the results indicate the possibility that non-Orientation attributes have weak or no correlation to other attributes and may be considered more “independent” than Orientation-related attributes.
 
 ### 1b-iv: Scatterplots of Class and Specific Attributes
@@ -88,14 +88,12 @@ Having now examined 38% of the remaining non-Orientation attributes, the results
 
 Next, I was to produce scatterplots between the Class variable and Orientation 2, Depth, and Area. I used a Wes Anderson pallet on my scatterplots and adjusted the size and transparency of the dots to allow a visual representation of each class' density. Further, I adjusted the jitter, else the dots would lie atop each other, and I felt that did little to represent reality (Figure 2).
 
-<div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/1/scatter o2 swap.png"></div>
+<img class="ui image" src="../images/DMA images/1/scatter o2 swap.png">
 *Figure 3: Class and Orientation 2.*
 
 Class compared with Orientation2 (Figure 3) varies the most of the three scatterplots. The points are in cluster-esque arrangements, with most points across all classes falling below the 0.14 measurement, and for A-D, below 0.13. Class E is the only Class with any points above 0.15. This indicates a low positive correlation, thus Orientation2 and Class have some dependency on each other.
 
-<div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/1/scatter depth swap.png"></div>
+<img class="ui image" src="../images/DMA images/1/scatter depth swap.png">
 *Figure 4: Class and Depth.*
 
 Examining the distribution of Class in the Depth attribute (Figure 4), there are apparent bands of points. There’s a marked decline in Depth as we examine the classes, with most points for A, B, and C toward the upper limit, then dropping in D and E. This indicates Depth has a negative correlation, and Depth and Class have a moderate negative dependency.
