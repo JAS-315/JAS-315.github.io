@@ -130,7 +130,7 @@ I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The orig
 <img class="ui image" src="../images/DMA images/1/std zero.png">
 <img class="ui image" src="../images/DMA images/1/std mean.png">
 <img class="ui image" src="../images/DMA images/1/std med.png"></div>
-*Figure 6: Row 1- LeafHue, Original Generation of Zeroset, Meanset, Medianset.*
+*Figure 6: Row 1- LeafHue, Original Generation of Zeroset, Meanset, Medianset.* \
 *Row 2- Mean Centring on Zeroset, Meanset, Medianset.*
 *Row 3- Normalization on Zeroset, Meanset, Medianset.*
 *Row 4- Standardization on Zeroset, Meanset, Medianset.*
