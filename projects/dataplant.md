@@ -263,8 +263,12 @@ Increasing k to 1, 10, 15, and 20 (Figure 24), Euclidean Distance’s accuracy i
 <img class="ui image" src="../images/DMA images/3/NB pca10 confusion matrix.PNG">
 *Figure 21: Confusion Matrices and Abridged Classification Summaries for Dataset of 10 Principal Components ("PCAset").*
 
-I used Naïve Bayes to classify the datasets and PCAset had the highest accuracy (Figure 21). Since PCA examines all attributes, orders them by highest to lowest variance, and allows us to discard any we find unimportant, PCA is beneficial for predicting potential trends in the data. At 10 PC (Figure 21), over 98% of variation is explained, so this dataset having the highest predictive ability is no surprise. Next, medianset is negligibly higher than meanset (Figure 23), followed by deletionset, (Figure 22) and the least accurate, as I suspected, was zeroset (Figure 27).
+I used Naïve Bayes to classify the datasets and PCAset had the highest accuracy (Figure 21). Since PCA examines all attributes, orders them by highest to lowest variance, and allows us to discard any we find unimportant, PCA is beneficial for predicting potential trends in the data. At 10 PC (Figure 21), over 98% of variation is explained, so this dataset having the highest predictive ability is no surprise. Next, medianset is negligibly higher than meanset (Figure 22), followed by deletionset, (Figure 23) and the least accurate, as I suspected, was zeroset (Figure 22).
 
-FIGURE OUT CHARTS
+<img class="ui image" src="../images/DMA images/3/cm and classification deletionset.PNG">
+*Figure 22: Confusion Matrices and Abridges Classification Summaries for Dataset with Missing Values Removed ("Deletionset").*
+
+<img class="ui image" src="../images/DMA images/3/cm and classification others.PNG">
+*Figure 23: Confusion Matrices and Abridges Classification Summaries for Datasets: Zeroset, Meanset, and Medianset.*
 
 While meanset and medianset’s instance values would often be similar, I suspect medianset had better results, as medians aren’t susceptible to being skewed by outliers, unlike means. The outlier-skewing likely contributes to deletionset’s lower accuracy, as well, as I replaced missing instances with means. Lastly, zeroset introduces enough outliers to skew the dataset (reference: 1e) and is least likely to be an accurate representation of the data.
