@@ -71,12 +71,12 @@ According to the correlation coefficients: Orientation1 and Orientation7 have a 
 
 ### 1b-ii: The Two Most Correlated Variables
 
->**Strongest Correlation-Orientation8 and Orientation9:** 0.9605505\
+> **Strongest Correlation-Orientation8 and Orientation9:** 0.9605505\
 Having now examined 50% of the Orientation attributes and considering the results of 1Bi(iiii), the case for Orientation attributes having linear dependencies with each other is strengthened, though we cannot confidently comment on their relationship with non-Orientation attributes.
 
 ### 1b-iii: The Two Least Correlated Variables
 
->**Weakest Correlation-Depth and LeafArea:** 0.0005190327\
+> **Weakest Correlation-Depth and LeafArea:** 0.0005190327\
 Having now examined 38% of the remaining non-Orientation attributes, the results indicate the possibility that non-Orientation attributes have weak or no correlation to other attributes and may be considered more “independent” than Orientation-related attributes.
 
 ### 1b-iv: Scatterplots of Class and Specific Attributes
@@ -98,8 +98,7 @@ Class compared with Orientation2 (Figure 3) varies the most of the three scatter
 
 Examining the distribution of Class in the Depth attribute (Figure 4), there are apparent bands of points. There’s a marked decline in Depth as we examine the classes, with most points for A, B, and C toward the upper limit, then dropping in D and E. This indicates Depth has a negative correlation, and Depth and Class have a moderate negative dependency.
 
-<div class="ui medium rounded images">
-<img class="ui image" src="../images/DMA images/1/scatter larea swap.png"></div>
+<img class="ui image" src="../images/DMA images/1/scatter larea swap.png">
 *Figure 5: Class and Leaf Area.*
 
 Class compared to LeafArea (Figure 5) has similar bands to Depth. Most points fall between 8,000 and 11,000, with each class having one or more bands outside this range. The points increase primarily within these bounds, indicating a low positive correlation and weak dependency between LeafArea and Class.
@@ -110,7 +109,7 @@ The most significant attributes are Orientation0, Orientation6, and Depth. Exami
 
 ### 1d: Replacing the Missing Values with 0, Mean, and Median, and Comparing Approaches
 
-Replacing missing data with zero, attribute means, or medians can be useful (referred to elsewhere as “zeroset,” “meanset,” and “medianset,” respectively.), especially considering that many algorithms automatically drop any row or instance missing values. However, several values are missing, results will be skewed. Other risks include outliers (rare: very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
+Replacing missing data with zero, attribute means, or medians can be useful (referred to elsewhere as “zeroset,” “meanset,” and “medianset,” respectively.), especially considering that many algorithms automatically drop any row or instance missing values. However, if several values are missing, results will be skewed. Other risks include outliers (rare: very high or low values), which affect means calculations; inadvertently weighting correlations between variables; or causing bias. Though outliers pose a risk, I think replacing missing values with means is the most useful of these three options.
 
 ### 1e: Attribute Transformation
 
@@ -131,16 +130,19 @@ I visualized LeafHue, as it has a mostly normal distribution (Figure 6; The orig
 <img class="ui image" src="../images/DMA images/1/std zero.png">
 <img class="ui image" src="../images/DMA images/1/std mean.png">
 <img class="ui image" src="../images/DMA images/1/std med.png"></div>
-*Figure 6*
-SORT THE ARRANGEMENT
+*Figure 6: Row 1- LeafHue, Original Generation of Zeroset, Meanset, Medianset.*
+*Row 2- Mean Centring on Zeroset, Meanset, Medianset.*
+*Row 3- Normalization on Zeroset, Meanset, Medianset.*
+*Row 4- Standardization on Zeroset, Meanset, Medianset.*
 
-### 1f: Attribute/Instance Selection \ 1f-i: Attribute and Instance Deletion Strategies for Missing Values
+### 1f: Attribute/Instance Selection
+### 1f-i: Attribute and Instance Deletion Strategies for Missing Values
 
-I examined the amount of missing values in each column and row and decided to outright remove any attribute that had over 25% and any instance that had over 10% missing values. This left very few missing values in the data. I replaced these with the means of each attribute, similar to the example from section 1d-i (referred to as “deletionset,” elsewhere).
+I examined the number of missing values in each column and row and decided outright to (programmatically) remove any attribute that had over 25% and any instance that had over 10% missing values. This left very few missing values in the data. I replaced these with the means of each attribute, similar to the example from section 1d-i (referred to as “deletionset,” elsewhere).
 
 ### 1f-ii: Using Correlations to Reduce the Number of Attributes
 
-I removed correlated attributes, which created a dataset of only LeafArea and LeafHue. I used na.omit to remove any missing values, which left 701 instances intact.
+I (programmatically) removed correlated attributes, which created a dataset of only LeafArea and LeafHue. I used na.omit to remove any missing values, which left 701 instances intact.
 
 ### 1f-iii: Using Principal Component Analysis (PCA) to Create a Dataset with Seven Attributes
 
@@ -148,13 +150,17 @@ I experimented with the raw data and missing values before deciding how to appro
 - …used na.omit during standardization, when projecting the data:
   - …manual projection resulted in 724 instances, but that is deceptive, as a great deal of missing values were reinstated during projection.
   - …projecting the returned values yielded 271 instances and no missing values.
-- Comparing the results, all the extant values returned in manual projection were the same as those in the returned values projection. The difference is reinstated NAs.
+    - Comparing the results, all the extant values returned in manual projection were the same as those in the returned values projection. The difference is reinstated NAs.
 - …used na.omit prior to standardization:
   - …both approaches of projection had the same results: 271 instances.
 
-Neither approach is ideal, as 63% of instances are lost. Regardless of approach, using na.rm during standardization didn’t change the results. Considering this, I again used the dataset created in 1Fi, deletionset. This left 704 instances and 17 attributes, which is an improvement. I also used the resulting values projection, rather than manual. A simplistic way of explaining PCA is that each dimension/attribute is processed mathematically, then ranked based on the resulting variance. The first PC is the transformed attribute that has the greatest variance. The second PC is found by assessing all dimensions that have no correlation to the first, then selecting the one with the greatest variance. Each subsequent PC is calculated in the same manner. Fortunately, prcomp performs all the equations and comparisons for us, both saving time and resulting in higher accuracy, for lack of human error.
+Neither approach is ideal, as 63% of instances are lost. Regardless of approach, using na.rm during standardization didn’t change the results. Considering this, I again used the dataset created in 1f-i, deletionset. This left 704 instances and 17 attributes, which is an improvement. I also used the resulting values projection, rather than manual.
 
-I standardized the data then calculated the PCs in a correlation matrix using prcomp, which I chose because prcomp uses singular value decomposition, giving more accuracy to results. Finally, I projected the data using the returned values. This reduced the dimensions, resulting in a dataset with only the specified number of Principal Components (7). I did this again for 10 PCs5, because such is required in Part 2. I have summarized one way to perform PCA, without describing everything I could have explored during each step. However, considering a screeplot, cumulative screeplot plot, and summary for this dataset, I, personally, would have reduced to 8 Principal Components. 7 shows 93% variability; 10 shows 98%; but 8 shows 95%. After 95%, there is minimal variation to be achieved, therefore 8 is ideal.
+A simplistic way of explaining PCA is that each dimension/attribute is processed mathematically, then ranked based on the resulting variance. The first Principal Component (PC) is the transformed attribute that has the greatest variance. The second PC is found by assessing all dimensions that have no correlation to the first, then selecting the one with the greatest variance. Each subsequent PC is calculated in the same manner. Fortunately, *prcomp* performs all the equations and comparisons for us, both saving time and resulting in higher accuracy, for lack of human error.
+
+I standardized the data, then calculated the PCs in a correlation matrix using *prcomp*, which I chose because *prcomp* uses singular value decomposition, giving more accuracy to results. Finally, I projected the data using the returned values. This reduced the dimensions, resulting in a dataset with only the specified number of Principal Components (7). I did this again for 10 PCs5, because such is required in Part 2.
+
+I have summarized one way to perform PCA, without describing everything I could have explored during each step. However, considering a screeplot, cumulative screeplot plot, and summary for this dataset, I, personally, would have reduced to 8 Principal Components. 7 shows 93% variability; 10 shows 98%; but 8 shows 95%. After 95%, there is minimal variation to be achieved, therefore 8 is ideal.
 
 ## Part 2: Clustering (R)
 ### 2a: Using Hierarchical, K-Means, and PAM to Create Classifications
