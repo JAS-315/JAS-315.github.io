@@ -218,9 +218,10 @@ I chose K-Means clustering using 50 iterations, 10 starts, and the Hartigan-Wong
 *Figure 15: K-Means Applied to PCAset, Deletionset, Zeroset, Meanset, and Medianset.*
 
 <img class="ui small right floated rounded image" src="../images/DMA images/2/cm kmeans.PNG">
+
+Though clusplot uses the first two Principal Components for the axes and I scaled each dataset, PCAset and zeroset’s points look different as do their scales, as their axes-components explain less than the others (Figure 16). As previously noted, replacing missing values with zero, means, or median can skew results, as seen on zeroset’s plot. Deletionset has the closest matching densities, but examining the confusion matrices, it has significantly less predicted instances in clusters 1 and 5. This is also true of zeroset’s predicted clusters 2 and 3; meanset’s cluster 4; and medianset’s clusters 3 and 4. From this, zeroset and medianset are unlikely to have the highest accuracies. The accuracy measurements (Figure 17) prove this supposition and my initial predictions to be true. Highest to lowest are: PCAset, deletionset, meanset, zeroset, and medianset. \
 *Figure 16 (right): Confusion Matrices of K-Means Application.*
 
-Though clusplot uses the first two Principal Components for the axes and I scaled each dataset, PCAset and zeroset’s points look different as do their scales, as their axes-components explain less than the others (Figure 16). As previously noted, replacing missing values with zero, means, or median can skew results, as seen on zeroset’s plot. Deletionset has the closest matching densities, but examining the confusion matrices, it has significantly less predicted instances in clusters 1 and 5. This is also true of zeroset’s predicted clusters 2 and 3; meanset’s cluster 4; and medianset’s clusters 3 and 4. From this, zeroset and medianset are unlikely to have the highest accuracies. The accuracy measurements (Figure 17) prove this supposition and my initial predictions to be true. Highest to lowest are: PCAset, deletionset, meanset, zeroset, and medianset.
 
 <img class="ui image" src="../images/DMA images/2/c4 accuracy scale.PNG">
 *Figure 17: Accuracy Results.*
