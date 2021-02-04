@@ -186,13 +186,15 @@ Note: The default for k-means is 10 iterations and 1 start, which I left intact,
 
 <div class="ui large rounded images">
 <img class="ui image" src="../images/DMA images/2/cluster test km iter.png">
-*Figure 10: K-Means Clustering, Iteration Experiments.*
-<img class="ui image" src="../images/DMA images/2/cluster test km nstart.png">
-*Figure 11: K-Means Clustering, NStart Experiments*
+<img class="ui image" src="../images/DMA images/2/cluster test km nstart.png"> </div>
+*Figure 10 (left): K-Means Clustering, Iteration Experiments.* \
+*Figure 11 (right): K-Means Clustering, NStart Experiments*
+
+<div class="ui large rounded images">
 <img class="ui image" src="../images/DMA images/2/cluster test km algorithms.png">
-*Figure 12: K-Means Clustering, Algorithm Experiments*
 <img class="ui image" src="../images/DMA images/2/cluster test pam various.png"></div>
-*Figure 13: PAM Clustering, Various Experiments*
+*Figure 12 (left): K-Means Clustering, Algorithm Experiments* \
+*Figure 13 (right): PAM Clustering, Various Experiments*
 
 I had many more confusion matrices than in the previous section, thus it wasn’t as straightforward. A practical reason to examine confusion matrices is to discern clusters that aren’t visible on a plot, as is the case for HCA’s Single, Average, Median, and Centroid methods (Figure 9).
 
