@@ -180,7 +180,9 @@ Considering density, none of the plots match exactly, but PAM and K-Means most c
 <img class="ui image" src="../images/DMA images/2/cluster test hca method.png">
 *Figure 9: Hierarchical Clustering Methods*
 
-I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts)6, and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figure 10-12).
+I experimented with several adjustments for each algorithm. For HCA, I tried each method; K-Means, different, numbers of iterations (iter) and starts (nstarts), and algorithms; PAM, Euclidean and Manhattan Distances7, and standardization within the clustering algorithm. Examining these clusters as plots only hints at optimal tuning (Figure 10-12).
+
+Note: The default for k-means is 10 iterations and 1 start, which I left intact, when they were not being modified for analysis (i.e., on any test that altered iterations, nstart was left at default, and both at default when testing algorithms). Euclidean Distance is measured by a straight line between two points, while Manhattan is executed by closing the distance using one or more right angles eventually connects two points, then measuring the distance.
 
 <img class="ui image" src="../images/DMA images/2/cluster test km iter.png">
 *Figure 10: K-Means Clustering, Iteration Experiments.*
@@ -193,16 +195,9 @@ I experimented with several adjustments for each algorithm. For HCA, I tried eac
 <img class="ui image" src="../images/DMA images/2/cluster test pam various.png">
 *Figure 13: PAM Clustering, Various Experiments*
 
-I had many more confusion matrices (Figure 17) than in the previous section, thus it wasn’t as straightforward. A practical reason to examine confusion matrices is to discern clusters that aren’t visible on a plot, as is the case for HCA’s Single, Average, Median, and Centroid methods (Figure 9).
+I had many more confusion matrices than in the previous section, thus it wasn’t as straightforward. A practical reason to examine confusion matrices is to discern clusters that aren’t visible on a plot, as is the case for HCA’s Single, Average, Median, and Centroid methods (Figure 9).
 
-FIGURE OUT CONFUSION MATRICES
-*Figure 14: Confusion Matrices, Left to Right*
-*HCA: Methods (Ward.D, Ward.D2, Single, Complete, Average, McQuitty, Median, Centroid).*
-*K-Means: Iterations (4, 10, 500, 100, 200).*
-*K-Means: NStarts (1, 10, 50, 100, 200).*
-*K-Means: Algorithms (Lloyd, MacQueen, Hartigan-Wong with Trace, Hartigan-Wong without Trace).*
-
-If this comes up in the future, I would use Rand Index, as it was developed for external cluster validation. However, I again measured accuracy via permutation of the diagonal values (Figure 18). An oddity is that the accuracy for K-Means 75, 100, and 200 starts are the same, but consulting the confusion matrices (Figure 14), this is an anomaly. From the results, I found for this dataset and algorithms:
+If this comes up in the future, I will use Rand Index, as it was developed for external cluster validation. However, I again measured accuracy via permutation of the diagonal values (Figure 14). An oddity is that the accuracy for K-Means 75, 100, and 200 starts are the same, but consulting the confusion matrices, this is an anomaly. From the results, I found for this dataset and algorithms:
 - HCA:
   - Ward.D was the best method.
 - K-Means:
@@ -214,31 +209,31 @@ If this comes up in the future, I would use Rand Index, as it was developed for 
   - standardization didn’t make much difference.
 
   <img class="ui image" src="../images/DMA images/2/accuracy results.PNG">
-  *Figure 15: Accuracy Results*
+  *Figure 14: Accuracy Results*
 
 ### 2c: Using One Clustering Technique on Alternative Datasets
-I chose K-Means clustering using 50 iterations, 10 starts, and the Hartigan-Wong algorithm. I imagined PCAset would have the highest accuracy and zeroset the lowest, having expressed my opinion of both methods’ reliability elsewhere.
+I chose K-Means clustering using 50 iterations, 10 starts, and the Hartigan-Wong algorithm (Figure 15). I imagined PCAset would have the highest accuracy and zeroset the lowest, having expressed my opinion of both methods’ reliability elsewhere.
 
 <img class="ui image" src="../images/DMA images/2/c4 clusters.png">
-*Figure 16: K-Means Applied to PCAset, Deletionset, Zeroset, Meanset, and Medianset.*
+*Figure 15: K-Means Applied to PCAset, Deletionset, Zeroset, Meanset, and Medianset.*
 
 <img class="ui image" src="../images/DMA images/2/cluster test km nstart.png">
-*Figure 17: Confusion Matrices of K-Means Application.*
+*Figure 16: Confusion Matrices of K-Means Application.*
 WHAT IMAGE
 
-Though clusplot uses the first two Principal Components for the axes and I scaled each dataset, PCAset and zeroset’s points look different as do their scales, as their axes-components explain less than the others (Figure 20). As previously noted, replacing missing values with zero, means, or median can skew results, as seen on zeroset’s plot. Deletionset has the closest matching densities, but examining the confusion matrices (Figure 19), it has significantly less predicted instances in clusters 1 and 5. This is also true of zeroset’s predicted clusters 2 and 3; meanset’s cluster 4; and medianset’s clusters 3 and 4. From this, zeroset and medianset are unlikely to have the highest accuracies. The accuracy measurements (Figure 21) prove this supposition and my initial predictions to be true. Highest to lowest are: PCAset, deletionset, meanset, zeroset, and medianset.
+Though clusplot uses the first two Principal Components for the axes and I scaled each dataset, PCAset and zeroset’s points look different as do their scales, as their axes-components explain less than the others (Figure 16). As previously noted, replacing missing values with zero, means, or median can skew results, as seen on zeroset’s plot. Deletionset has the closest matching densities, but examining the confusion matrices, it has significantly less predicted instances in clusters 1 and 5. This is also true of zeroset’s predicted clusters 2 and 3; meanset’s cluster 4; and medianset’s clusters 3 and 4. From this, zeroset and medianset are unlikely to have the highest accuracies. The accuracy measurements (Figure 17) prove this supposition and my initial predictions to be true. Highest to lowest are: PCAset, deletionset, meanset, zeroset, and medianset.
 
 <img class="ui image" src="../images/DMA images/2/c4 accuracy scale.PNG">
-*Figure 18: Accuracy Results.*
+*Figure 17: Accuracy Results.*
 
 ## Part 3: Classification (Weka)
 
 ### 3a: Using ZeroR, OneR, NaïveBayes, IBk (k-NN), and J48 (C4.5) for Classification
 
 FIGURE OUT THIS CHART
-*Figure 19: Confusion Matrices and Abridged Classification Summaries for ZeroR, OneR, Naïve Bayes, and J48 Algorithms.*
+*Figure 18: Confusion Matrices and Abridged Classification Summaries for ZeroR, OneR, Naïve Bayes, and J48 Algorithms.*
 
-For this dataset, J48 produced the best results (98.4%, Figure 22). I find it odd, but refreshing, to know two classifiers with very simplistic approaches (J48 and OneR) have the highest accuracies. I have given extremely cursory overviews of all methods employed below.
+For this dataset, J48 produced the best results (98.4%, Figure 18). I find it odd, but refreshing, to know two classifiers with very simplistic approaches (J48 and OneR) have the highest accuracies. I have given extremely cursory overviews of all methods employed below.
 - ZeroR: a baseline classification that predicts the majority result from the training set.
   - If Class E is predicted, the training set had majority E-values.
 - OneR: hypothesizes and tests a rule for each attribute based on class, choosing the one with the lowest error rate. That “one rule” is used to predict the other classes.
@@ -249,27 +244,27 @@ For this dataset, J48 produced the best results (98.4%, Figure 22). I find it od
 
 ### 3b: Choose One Algorithm to Explore Optimisation Techniques
 
-Using IBk, I changed the number of k (introducing k-number of neighbours) to 1, 3, 5, and 10, and distance measurement to either Euclidean or Manhattan (Figure 23; Distances explained in footnote 6). With Euclidean Distance, the classifier’s accuracy decreased as k increased. There was an immediate increase just by changing the distance to Manhattan. Accuracy was 99.96% at 1 and 3 neighbours, then increased to 100% at 5 and 10.
+Using IBk, I changed the number of k (introducing k-number of neighbours) to 1, 3, 5, and 10, and distance measurement to either Euclidean or Manhattan (Figure 19; Distances explained in previous note). With Euclidean Distance, the classifier’s accuracy decreased as k increased. There was an immediate increase just by changing the distance to Manhattan. Accuracy was 99.96% at 1 and 3 neighbours, then increased to 100% at 5 and 10.
 
 <img class="ui image" src="../images/DMA images/3/multi ibk 1 3 5 10.PNG">
-*Figure 20: IBk Results.*
+*Figure 19: IBk Results.*
 *Euclidean Distance with 1, 3, 5, 10 Neighbours, Respectively.*
 *Manhattan Distance with 1, 3, 5, 10 Neighbours, Respectively.*
 
-Increasing k to 1, 10, 15, and 20 (Figure 24), Euclidean Distance’s accuracy increased at 20, while Manhattan Distance’s decreased after 15. Thus, the distance measurements have a substantial effect on the predictive ability, and accuracy can be fine-tuned by adjusting the number of kneighbours.
+Increasing k to 1, 10, 15, and 20 (Figure 24), Euclidean Distance’s accuracy increased at 20, while Manhattan Distance’s decreased after 15. Thus, the distance measurements have a substantial effect on the predictive ability, and accuracy can be fine-tuned by adjusting the number of k-neighbours.
 
-<img class="ui image" src="../images/DMA images/1/multi ibk 1 10 15 20.PNG">
-*Figure 21: IBk Results, Increased K-Neighbours.*
+<img class="ui image" src="../images/DMA images/3/multi ibk 1 10 15 20.PNG">
+*Figure 20: IBk Results, Increased K-Neighbours.*
 *Euclidean Distance with 1, 10, 15, 20 Neighbours, Respectively.*
 *Manhattan Distance with 1, 10, 15, 20 Neighbours, Respectively.*
 
 ### 3c: Choose One Algorithm and Use if on Alternate Datasets
 
 <img class="ui image" src="../images/DMA images/3/NB pca10 confusion matrix.PNG">
-*Figure 22: Confusion Matrices and Abridged Classification Summaries for Dataset of 10 Principal Components ("PCAset").*
+*Figure 21: Confusion Matrices and Abridged Classification Summaries for Dataset of 10 Principal Components ("PCAset").*
 
-I used Naive Bayes to classify the datasets and PCAset had the highest accuracy (Figure 25). Since PCA examines all attributes, orders them by highest to lowest variance, and allows us to discard any we find unimportant, PCA is beneficial for predicting potential trends in the data. At 10 PC (Figure 25), over 98% of variation is explained, so this dataset having the highest predictive ability is no surprise. Next, medianset is negligibly higher than meanset (Figure 27), followed by deletionset, (Figure 26) and the least accurate, as I suspected, was zeroset (Figure 27).
+I used Naïve Bayes to classify the datasets and PCAset had the highest accuracy (Figure 21). Since PCA examines all attributes, orders them by highest to lowest variance, and allows us to discard any we find unimportant, PCA is beneficial for predicting potential trends in the data. At 10 PC (Figure 21), over 98% of variation is explained, so this dataset having the highest predictive ability is no surprise. Next, medianset is negligibly higher than meanset (Figure 23), followed by deletionset, (Figure 22) and the least accurate, as I suspected, was zeroset (Figure 27).
 
 FIGURE OUT CHARTS
 
-While meanset and medianset’s instance values would often be similar, I suspect medianset had better results, as medians aren’t susceptible to being skewed by outliers, unlike means. The outlier-skewing likely contributes to deletionset’s lower accuracy, as well, as I replaced missing instances with means. Lastly, zeroset introduces enough outliers to skew the dataset (reference: 1E) and is least likely to be an accurate representation of the data.
+While meanset and medianset’s instance values would often be similar, I suspect medianset had better results, as medians aren’t susceptible to being skewed by outliers, unlike means. The outlier-skewing likely contributes to deletionset’s lower accuracy, as well, as I replaced missing instances with means. Lastly, zeroset introduces enough outliers to skew the dataset (reference: 1e) and is least likely to be an accurate representation of the data.
