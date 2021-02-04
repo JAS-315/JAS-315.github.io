@@ -247,14 +247,14 @@ Using IBk, I changed the number of k (introducing k-number of neighbours) to 1, 
 
 <img class="ui image" src="../images/DMA images/3/multi ibk 1 3 5 10.PNG">
 *Figure 19: IBk Results:* \
-> *Euclidean Distance with 1, 3, 5, 10 Neighbours, Respectively.* \
+*Euclidean Distance with 1, 3, 5, 10 Neighbours, Respectively.* \
 *Manhattan Distance with 1, 3, 5, 10 Neighbours, Respectively.*
 
 Increasing k to 1, 10, 15, and 20 (Figure 24), Euclidean Distance’s accuracy increased at 20, while Manhattan Distance’s decreased after 15. Thus, the distance measurements have a substantial effect on the predictive ability, and accuracy can be fine-tuned by adjusting the number of k-neighbours.
 
 <img class="ui image" src="../images/DMA images/3/multi ibk 1 10 15 20.PNG">
 *Figure 20: IBk Results, Increased K-Neighbours:* \
-> *Euclidean Distance with 1, 10, 15, 20 Neighbours, Respectively.* \
+*Euclidean Distance with 1, 10, 15, 20 Neighbours, Respectively.* \
 *Manhattan Distance with 1, 10, 15, 20 Neighbours, Respectively.*
 
 ### 3c: Choose One Algorithm and Use if on Alternate Datasets
