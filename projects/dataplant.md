@@ -168,7 +168,7 @@ I have summarized one way to perform PCA, without describing everything I could 
 <img class="ui image" src="../images/DMA images/2/clustersx4 scale means.png">
 *Figure 7: Initial Clustering Plots to Examine Effectiveness of Algorithms.*
 
-<img class="ui small left floated rounded image" src="../images/DMA images/2/table scale means.PNG"> \
+<img class="ui small left floated rounded image" src="../images/DMA images/2/table scale means.PNG">
 
 As K-Means clustering doesn’t allow missing values, I initially omitted them in advance. This left 271 instances amongst 18 variables, which I then scaled. This approach reduced all Class representations unevenly by 50-83%, so it wasn’t optimal. Considering this, I again used deletionset, which resulted in the removal of 20 instances (spread more evenly over each Class) and one attribute. I scaled the numeric data, added the Class attribute back in, then the clusters. I attempted several combinations of attributes for the x and y axes of the plots (Figure 7) and studied all pairs as plots to try to determine the best pairing. Clusplot uses PCA to determine the x and y variables for the plots, and colour codes the clusters by density (low to high: blue, green, red, purple). This is the way I prefer to visualize the plots.
 
