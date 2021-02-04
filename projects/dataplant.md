@@ -33,7 +33,7 @@ I then produced histograms for each attribute (Figure 1). As is my nature, I enj
 
 I removed missing value and used the value of populated rows for each attribute to calculate custom bounds and binwidths for each attribute's histogram. So, first: I used this value to calculate the bounds of the x-axis, plus or minus one bind width, to make sure all bars were visible. Next: I used the value again in applying the Freedman-Diaconis rule for optimal binwidth, as there was not a one-size-fits-all value that would produce optimal bars. Watching all of the histograms fly by as the code ran was surprisingly exciting, as I spent a lot of time on this algorithm.
 
-<div class="ui medium rounded images">
+<div class="ui medium center floated rounded images">
 <img class="ui image" src="../images/DMA images/1/histo cenx.png">
 <img class="ui image" src="../images/DMA images/1/histo ceny.png">
 <img class="ui image" src="../images/DMA images/1/histo mass.png">
@@ -49,7 +49,7 @@ I removed missing value and used the value of populated rows for each attribute 
 <img class="ui image" src="../images/DMA images/1/histo o7.png">
 <img class="ui image" src="../images/DMA images/1/histo o8.png">
 <img class="ui image" src="../images/DMA images/1/histo o9.png">
-<img class="ui image" src="../images/DMA images/1/histo wt.png">
+<img class="ui image" src="../images/DMA images/1/histo weight.png">
 <img class="ui image" src="../images/DMA images/1/histo area.png">
 <img class="ui image" src="../images/DMA images/1/histo hue.png"></div>
 *Figure 1: Historgrams of Attributes.*
@@ -81,7 +81,7 @@ Having now examined 38% of the remaining non-Orientation attributes, the results
 
 ### 1b-iv: Scatterplots of Class and Specific Attributes
 
-<div class="ui medium rounded images">
+<div class="ui large rounded images">
 <img class="ui image" src="../images/DMA images/1/scatter o2 meh.png">
 <img class="ui image" src="../images/DMA images/1/scatter o2 swap.png"></div>
 *Figure 2: left- no jitter; right- jitter.*
