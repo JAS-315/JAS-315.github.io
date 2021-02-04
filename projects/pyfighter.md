@@ -60,16 +60,16 @@ This included:
 
 The ships were inspired quite a bit by Battlestar Galactica, as I imagine is apparent. Originally, the hero ship would change to a 2.5D view of the ship when moving vertically, but this was changed during refactoring. There are two version of alien ships: one without a shield and one with. The player needs to shoot the enemy a different number of times to destroy it, depending on whether or not it is shielded. I implemented a simple parallax background, to give the screen the illusion of depth and set the scene in a familiar "outer space" atmosphere.
 
-<div class="ui medium rounded images">
+<div class="ui large rounded images">
   <img class="ui image" src="../images/pyfighter title.png">
   <img class="ui image" src="../images/pyfighter wave.png">
 </div>
 
 I created and implemented all of the animations, which include animated thrusters for both the hero and alien ships, the two power ups, and explosions. The powerups were designed to stand out, but not create "busy" distractions for the player. For the "boss" enemies, I drew the ship in various states of destruction, which would alter the ship as its health bar diminished. The final state, the boss is floating aimlessly in space with its red eye put out. This was actually done on the final day, a few hours before the project was to be completed. I was surprised how well it turned out.
 
-<img class="ui medium centered rounded image" src="../images/pyfighter boss 1.png">
+<img class="ui large centered rounded image" src="../images/pyfighter boss 1.png">
 
-<div class="ui medium rounded images">
+<div class="ui small rounded images">
   <img class="ui image" src="../images/pyfighter boss 2.png">
   <img class="ui image" src="../images/pyfighter boss 3.png">
   <img class="ui image" src="../images/pyfighter boss 4.png">
