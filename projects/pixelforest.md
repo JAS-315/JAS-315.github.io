@@ -25,7 +25,7 @@ summary: OpenGL Forest, using 2D textures on 3D models and heirarchical modellin
 <img class="ui medium left floated rounded image" src="../images/green tree.PNG">
 I decided to make a small forest, using specific OpenGL framework provided by my module convener and pixel art (original credits to Grafxkid, but they have been heavily modified for this purpose). I love 2D pixel art, and it sounded like an interesting idea to use it in a 3D world. To do so, I redrew the graphics the I would use as skins so they could wrap around objects, rather than appear as flat planes.
 
-<img class="ui medium centered rounded image" src="../images/tree parts.png">
+<img class="ui large centered rounded image" src="../images/tree parts.png">
 
 For all objects, I used GLUquadric shapes: cylinder, sphere, and disk. I started by constructing the “leafy” trees. I used a cylinder for the trunk, a cone created from a cylinder for the branches, and a sphere for the top. I scaled the top to slightly skew the shape, so it is slightly wider and longer than it is tall. It is a very subtle change but gives a more pleasing look than a perfect sphere.  
 
@@ -50,4 +50,4 @@ For the pond, there are many ways I could have rendered this disk. The most prom
 
 I had several ideas for lighting, such as using several positional lights or spotlights to give the feeling of stars. However, the number of lights per scene is limited to eight, so this would not be viable. I experimented with directional lights, but things were still either too bright or dim. In the end, I used a positional light located high up and to the left of everything, as if the pixel moon were casting a pale purple light on all the objects.  
 
-The materials have their specular material set to black for everything, except the pond and frog. Had I not, the shadows of the three-dimensional objects would be unnecessarily harsh. I set the specular material of the pond to a low value of white, to give it a little pop, and reduced the transparency level of its specular material, to make it slightly transparent. I only set the material for the front face of the pond (all other object materials are front and back face), else transparency would not be possible. I made the frog “shiny” and increased its specular material’s value to 0.6, so he has an apparent sheen. 
+The materials have their specular material set to black for everything, except the pond and frog. Had I not, the shadows of the three-dimensional objects would be unnecessarily harsh. I set the specular material of the pond to a low value of white, to give it a little pop, and reduced the transparency level of its specular material, to make it slightly transparent. I only set the material for the front face of the pond (all other object materials are front and back face), else transparency would not be possible. I made the frog “shiny” and increased its specular material’s value to 0.6, so he has an apparent sheen.
