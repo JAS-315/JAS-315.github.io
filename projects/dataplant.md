@@ -18,10 +18,11 @@ labels:
 summary: A project in three parts, including data visualisation and preprocessing, clustering, and classification.
 ---
 
-There were quicte a few steps to this project. The first section addresses data visualisation and pre-processing.
+There were quite a few steps to this project, and I have abridged the instructions to focus more on my answers and analysis. At times, I was asked to explain topics or compare methods to show a deeper understanding. I used a provided dataset that is based on real-world plant data, but has been modified. It includes 18 attributes and a 724 instances (plants), each of which belong to a Class (revealed in the dataset).
+
+The first section addresses data visualisation and pre-processing.
 
 ## Description, Visualisation, and Pre-Processing (R)
-
 ### 1a: Exploring the Data
 
 I started by finding the centrality and dispersion measurements, as well as the number of missing values per attribute (not pictured).
@@ -54,7 +55,7 @@ I removed missing value and used the value of populated rows for each attribute 
 *Figure 1: Historgrams of Attributes.*
 *Mean: Grey Double-Dashed; Median: Red Dashed; Mode: Blue Dotted Lines.*
 
-I visualised the Class variable by colour and chose the Viridis pallet, as it's not only aesthetically pleasing, but also discernible to those with colour blindness. I represented the mean, median, and mode using colour-blind-safe colours, as well as different lines.
+I visualised the Class variable by colour and chose the [Viridis pallet](https://www.r-bloggers.com/2018/07/ggplot2-welcome-viridis/), as it's not only aesthetically pleasing, but also discernible to those with colour blindness. I represented the mean, median, and mode using colour-blind-safe colours, as well as different lines.
 
 Considering the histograms along with the centrality and dispersion calculations in 1a, the x-axis reflects each attribute’s mean (normal distribution) or median (abnormal distribution) as the centre; range is the scale that the x-axis spans; standard deviation as where 2/3 of the data falls to the left or right of mean (normal distribution, only). The ideal normal distribution has the same mean, median, and mode.
 
@@ -64,9 +65,9 @@ Considering the data from the centrality and dispersion calculations, we should 
 
 According to the correlation coefficients: Orientation1 and Orientation7 have a very strong negative correlation-- when one attribute increases, the other decreases. Mass and Orientation0 have a very weak negative correlation, but we can make a reserved judgement that when one attribute increases, the other decreases. Orientation7 and Orientation8 have a very strong positive correlation-- when one attribute increases, the other does as well. Having examined 40% of the Orientation variables, we see the possibility that the Orientation attributes are dependent on each other, but not necessarily other variables.
 
-**Orientation1 and Orientation7:** -0.8696721\
-**Mass and Orientation0:** -0.08768968\
-**Orientation7 and Orientation8:** 0.9291126\
+> **Orientation1 and Orientation7:** -0.8696721\
+> **Mass and Orientation0:** -0.08768968\
+> **Orientation7 and Orientation8:** 0.9291126\
 
 ### 1b-ii: The Two Most Correlated Variables
 
