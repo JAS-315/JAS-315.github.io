@@ -184,7 +184,7 @@ I experimented with several adjustments for each algorithm. For HCA, I tried eac
 
 Note: The default for k-means is 10 iterations and 1 start, which I left intact, when they were not being modified for analysis (i.e., on any test that altered iterations, nstart was left at default, and both at default when testing algorithms). Euclidean Distance is measured by a straight line between two points, while Manhattan is executed by closing the distance using one or more right angles eventually connects two points, then measuring the distance.
 
-<div class="ui medium rounded images">
+<div class="ui large rounded images">
 <img class="ui image" src="../images/DMA images/2/cluster test km iter.png">
 *Figure 10: K-Means Clustering, Iteration Experiments.*
 <img class="ui image" src="../images/DMA images/2/cluster test km nstart.png">
