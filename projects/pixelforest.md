@@ -14,13 +14,13 @@ labels:
 summary: OpenGL Forest, using 2D textures on 3D models and heirarchical modelling.
 ---
 
-<img class="ui large centered rounded image" src="../images/pixel forest 1a.png">
-
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="../images/pixel forest 1a.png">
     <source src="../images/pixel forest demo.mp4" type="video/mp4">
   </video>
 </figure>
+
+<img class="ui large centered rounded image" src="../images/pixel forest 1a.png">
 
 <img class="ui medium left floated rounded image" src="../images/green tree.PNG">
 I decided to make a small forest, using specific OpenGL framework provided by my module convener and pixel art (original credits to Grafxkid, but they have been heavily modified for this purpose). I love 2D pixel art, and it sounded like an interesting idea to use it in a 3D world. To do so, I redrew the graphics the I would use as skins so they could wrap around objects, rather than appear as flat planes.
