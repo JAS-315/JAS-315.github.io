@@ -229,7 +229,7 @@ Though clusplot uses the first two Principal Components for the axes and I scale
 
 ### 3a: Using ZeroR, OneR, NaïveBayes, IBk (k-NN), and J48 (C4.5) for Classification
 
-FIGURE OUT THIS CHART
+<img class="ui image" src="../images/DMA images/2/c4 accuracy scale.PNG">
 *Figure 18: Confusion Matrices and Abridged Classification Summaries for ZeroR, OneR, Naïve Bayes, and J48 Algorithms.*
 
 For this dataset, J48 produced the best results (98.4%, Figure 18). I find it odd, but refreshing, to know two classifiers with very simplistic approaches (J48 and OneR) have the highest accuracies. I have given extremely cursory overviews of all methods employed below.
