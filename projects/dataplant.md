@@ -169,7 +169,7 @@ I have summarized one way to perform PCA, without describing everything I could 
 *Figure 7: Initial Clustering Plots to Examine Effectiveness of Algorithms.*
 
 <img class="ui small left floated rounded image" src="../images/DMA images/2/table scale means.PNG"> \
-*Figure 8: Confusion Matrices of Initial Clustering Results.*
+*Figure 8 (left): Confusion Matrices of Initial Clustering Results.*
 
 As K-Means clustering doesn’t allow missing values, I initially omitted them in advance. This left 271 instances amongst 18 variables, which I then scaled. This approach reduced all Class representations unevenly by 50-83%, so it wasn’t optimal. Considering this, I again used deletionset, which resulted in the removal of 20 instances (spread more evenly over each Class) and one attribute. I scaled the numeric data, added the Class attribute back in, then the clusters. I attempted several combinations of attributes for the x and y axes of the plots (Figure 7) and studied all pairs as plots to try to determine the best pairing. Clusplot uses PCA to determine the x and y variables for the plots, and colour codes the clusters by density (low to high: blue, green, red, purple). This is the way I prefer to visualize the plots.
 
@@ -218,7 +218,7 @@ I chose K-Means clustering using 50 iterations, 10 starts, and the Hartigan-Wong
 *Figure 15: K-Means Applied to PCAset, Deletionset, Zeroset, Meanset, and Medianset.*
 
 <img class="ui small left floated rounded image" src="../images/DMA images/2/cm kmeans.PNG">
-*Figure 16: Confusion Matrices of K-Means Application.*
+*Figure 16 (left): Confusion Matrices of K-Means Application.*
 
 Though clusplot uses the first two Principal Components for the axes and I scaled each dataset, PCAset and zeroset’s points look different as do their scales, as their axes-components explain less than the others (Figure 16). As previously noted, replacing missing values with zero, means, or median can skew results, as seen on zeroset’s plot. Deletionset has the closest matching densities, but examining the confusion matrices, it has significantly less predicted instances in clusters 1 and 5. This is also true of zeroset’s predicted clusters 2 and 3; meanset’s cluster 4; and medianset’s clusters 3 and 4. From this, zeroset and medianset are unlikely to have the highest accuracies. The accuracy measurements (Figure 17) prove this supposition and my initial predictions to be true. Highest to lowest are: PCAset, deletionset, meanset, zeroset, and medianset.
 
