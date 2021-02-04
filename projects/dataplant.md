@@ -224,6 +224,11 @@ Though clusplot uses the first two Principal Components for the axes and I scale
 <img class="ui image" src="../images/DMA images/2/c4 accuracy scale.PNG">
 *Figure 17: Accuracy Results.*
 
+
+
+
+
+
 ## Part 3: Classification (Weka)
 
 ### 3a: Using ZeroR, OneR, NaïveBayes, IBk (k-NN), and J48 (C4.5) for Classification
