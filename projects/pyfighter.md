@@ -27,35 +27,35 @@ summary: A collaborative project to make a side-scrolling space shooter called "
 
 *To control the Pyfighter you use the arrow keys to move around the screen. Space Bar fires the LAZOR Cannon at the alien scum.*
 
-*As a human with little regard for alien life (as they have none for yours), you have been equipped with experimental smart bombs that can instantly destroy the drone ships sent to bring you down.* 
+*As a human with little regard for alien life (as they have none for yours), you have been equipped with experimental smart bombs that can instantly destroy the drone ships sent to bring you down.*
 
-*Beware: if you kill enough aliens, you will attract the attention of the alien destroyers, who will prove to be a tougher match.* 
+*Beware: if you kill enough aliens, you will attract the attention of the alien destroyers, who will prove to be a tougher match.*
 
-*This game was loosely inspired by Galaga and other such arcade games from the 80s. The art is inspired by sci-fi entertainment from that era and was drawn by Jes.* 
+*This game was loosely inspired by Galaga and other such arcade games from the 80s. The art is inspired by sci-fi entertainment from that era and was drawn by Jes.*
 
-*The game is a wave-based, side-scrolling shooter with bullet-hell elements. The player has omnidirectional 2D control around the screen. The player has access to two weapons: a basic straight-line firing gun and a screen clearing bomb. Powerups were implemented to allow for higher level play options such as resource management.* 
+*The game is a wave-based, side-scrolling shooter with bullet-hell elements. The player has omnidirectional 2D control around the screen. The player has access to two weapons: a basic straight-line firing gun and a screen clearing bomb. Powerups were implemented to allow for higher level play options such as resource management.*
 
-*Life and point systems are implemented to allow rankings of each game play run. These are added to a high score file after assigning the player name after each run.* 
+*Life and point systems are implemented to allow rankings of each game play run. These are added to a high score file after assigning the player name after each run.*
 
-*The High Scores are also displayed on game over.* 
+*The High Scores are also displayed on game over.*
 
-*A boss wave was added every 4th wave to provide additional challenge and variation, as well to reward the player with powerups they may not have received from the random spawns.* 
+*A boss wave was added every 4th wave to provide additional challenge and variation, as well to reward the player with powerups they may not have received from the random spawns.*
 
-*There are some quality of life implementations in the game as well: there is an option to pause the game loop mid-play, as well as quit the game without needing to use the mouse. There is also a start screen that explains how to play the game without the needing to read the readme.* 
+*There are some quality of life implementations in the game as well: there is an option to pause the game loop mid-play, as well as quit the game without needing to use the mouse. There is also a start screen that explains how to play the game without the needing to read the readme.*
 
-*Sounds were taken from grsites.com 
+*Sounds were taken from grsites.com
 Music was taken from dl-sounds.com*
 
-My contributions dealt largely with the asthetics of the game. I strongly believe setting a pleasing scene with appropriate graphics and effects has a big impact on players. As mentioned, the game drew inspiration from retro pop culture, so I kept that in mind when producing the art.  
+My contributions dealt largely with the aesthetics of the game. I strongly believe setting a pleasing scene with appropriate graphics and effects has a big impact on players. As mentioned, the game drew inspiration from retro pop culture, so I kept that in mind when producing the art.  
 
-I created all of the graphics, which were hand-drawn on an iPad and edited with Autodesk. 
-This included: 
+I created all of the graphics, which were hand-drawn on an iPad and edited with Autodesk.
+This included:
 - graphics for and layout of the title screen
 - hero ship and thruster fire
 - enemy ships, shields, and thruster fire
 - boss ship and destruction
 - hero and enemy death explosions
-- both powerups (extra life and bomb) 
+- both powerups (extra life and bomb)
 - background
 
 The ships were inspired quite a bit by Battlestar Galactica, as I imagine is apparent. Originally, the hero ship would change to a 2.5D view of the ship when moving vertically, but this was changed during refactoring. There are two version of alien ships: one without a shield and one with. The player needs to shoot the enemy a different number of times to destroy it, depending on whether or not it is shielded. I implemented a simple parallax background, to give the screen the illusion of depth and set the scene in a familiar "outer space" atmosphere.
@@ -69,7 +69,7 @@ I created and implemented all of the animations, which include animated thruster
 
 <img class="ui medium centered rounded image" src="../images/pyfighter boss 1.png">
 
-<div class="ui small rounded images">
+<div class="ui medium rounded images">
   <img class="ui image" src="../images/pyfighter boss 2.png">
   <img class="ui image" src="../images/pyfighter boss 3.png">
   <img class="ui image" src="../images/pyfighter boss 4.png">
