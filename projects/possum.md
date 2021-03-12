@@ -138,8 +138,4 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - End: “Dance Robot ACTIVATE!” 
   - [Loyalty Freak Music](https://freemusicarchive.org/music/Loyalty_Freak_Music) License: CC0
 
-### Etc. 
-- Delay Tracker Script: 
-  - AndyRogerKats, Unity Forums answer. 
-
 
