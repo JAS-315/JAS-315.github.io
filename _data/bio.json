@@ -10,8 +10,8 @@
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Nottingham",
-      "countryCode": "UK",
+      "city": "",
+      "countryCode": "",
       "region": ""
     },
     "profiles": [
@@ -29,17 +29,26 @@
   },
   "interests": [
     {
+      "name": "artificial intelligence",
+      "keywords": [
+      ]
+    },
+    {
+      "name": "data",
+      "keywords": [
+        "analysis",
+        "modelling",
+        "Azure",
+        "Power BI"
+      ]
+    },
+    {
       "name": "games",
       "keywords": [
         "serious games",
         "gamification",
         "education",
         "mental health"
-      ]
-    },
-    {
-      "name": "artificial intelligence",
-      "keywords": [
       ]
     },
     {
@@ -52,7 +61,7 @@
         "vector graphics",
         "modelling"
       ]
-    }        
+    }
   ],
   "skills": [
     {
