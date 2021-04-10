@@ -17,7 +17,7 @@ summary: A collaborative project to make a side-scrolling space shooter called "
     <source src="../images/pygame demo.mp4" type="video/mp4">
 </video>
 
-*An extract from the Last Pyfighter instruction manual:*
+### *An extract from the Last Pyfighter instruction manual:*
 
 *The Year is 30XX*
 *The Human Race is under attack.*
@@ -43,8 +43,8 @@ summary: A collaborative project to make a side-scrolling space shooter called "
 
 *There are some quality of life implementations in the game as well: there is an option to pause the game loop mid-play, as well as quit the game without needing to use the mouse. There is also a start screen that explains how to play the game without the needing to read the readme.*
 
-*Sounds were taken from grsites.com
-Music was taken from dl-sounds.com*
+*Sounds were taken from grsites.com*  
+*Music was taken from dl-sounds.com*
 
 My contributions dealt largely with the aesthetics of the game, both artistically and programmatically. As mentioned in the introduction text, the game drew inspiration from retro pop culture.  
 
@@ -57,7 +57,7 @@ I created all of the graphics, which were hand-drawn on an iPad and edited with 
 - powerups (extra life and bomb)
 - background
 
-<div class="ui large rounded images">
+<div class="ui large centered rounded images">
   <img class="ui image" src="../images/pyfighter title.png">
   <img class="ui image" src="../images/pyfighter wave.png">
 </div>
@@ -83,7 +83,7 @@ All of this was actually done on the final day, a few hours before the project w
 
 <img class="ui large centered rounded image" src="../images/pyfighter boss 1.png">
 
-<div class="ui small rounded images">
+<div class="ui small centered rounded images">
   <img class="ui image" src="../images/pyfighter boss 2.png">
   <img class="ui image" src="../images/pyfighter boss 3.png">
   <img class="ui image" src="../images/pyfighter boss 4.png">
@@ -99,16 +99,17 @@ The powerups were designed to stand out, but not create "busy" distractions for 
 
 I implemented a simple parallax background, to give the screen the illusion of depth and set the scene in a familiar "outer space" atmosphere.
 
-Aside from the active audio and visual feedback from the hero and enemy ships, there are also text elements. These serve to inform and ready the player:
+Aside from the active audio and visual feedback from the hero and enemy ships, there are also text elements. These serve to inform and/or ready the player:
 - score: the current score
 - wave: which enemy wave is on (every fourth wave is a boss wave)
 - bombs: the number of bombs the player has available
 - lives: the number of tries the player has remaining
 - enemies reinforcements: how many more enemies are left in the current wave
 - health bar (boss wave, only): how much health the boss ship has remaining
+- high score screen displayed after all lives are depleted (opportunity to input name if ranked)
 
 ## Code
-I was lucky to have such talented coding partners. We spent a lot of time paired (or... tripletted?) coding. I was often the rubber ducky-- able to look at code to debug and find errors or to talk through code to help get ideas that would help us reach the goal.
+I was lucky to have such talented coding partners. We spent a lot of time paired (or... tripletted?) coding. I was often the rubber ducky— able to look at code to debug and find errors or talk through code to help develop ideas that would help us reach the goal.
 
 ### Refactoring
 I spearheaded the second refactoring of the games' code and use of in-built classes. We made three versions of the game, in the end. The first refactor set us up to use OOP (Object Oriented Programming), but we were each learning Pygame in a very short amount of time and did not understand all of the possibilities right off the bat.
