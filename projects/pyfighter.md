@@ -12,7 +12,7 @@ labels:
 summary: A collaborative project to make a side-scrolling space shooter called "The Last PyFighter." Our team, "Try Force," created this game in a very short amount of time.
 ---
 
-<video width="720" height="405" controls>
+<p align="center"><video width="720" height="405" controls>
     <source src="../images/pygame demo.mp4" type="video/mp4">
 </video>
 
@@ -56,7 +56,7 @@ All of this was actually done on the final day, a few hours before the project w
 
 <img class="ui large centered rounded image" src="../images/pyfighter boss 1.png">
 
-<div class="ui small centered rounded images">
+<div class="ui small centered rounded images" align=centered>
   <img class="ui image" src="../images/pyfighter boss 2.png">
   <img class="ui image" src="../images/pyfighter boss 3.png">
   <img class="ui image" src="../images/pyfighter boss 4.png">
