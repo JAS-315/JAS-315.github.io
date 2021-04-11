@@ -9,7 +9,6 @@ date: 2018-12-28
 labels:
   - Python
   - Pygame
-  - Unity
 summary: A collaborative project to make a side-scrolling space shooter called "The Last PyFighter." Our team, "Try Force," created this game in a very short amount of time.
 ---
 
