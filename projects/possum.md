@@ -108,7 +108,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
   <img class="ui image" src="../images/crushers.png"></div>
 - Another thing I couldn't tear myself away from that I love from the 16-bit days are cutscenes. Yes, we have cutscenes now, but there was something really fun about cutscenes then. Think back to Chrono Trigger and your first visit to Magus' castle; Terranigma and the skateboarding scene; Final Fantasy III (US) and the opera (amongst so many others). There was something exciting and unique there. So, I made the end of my currently very short game with that in mind. 
 
-<iframe width="768" height="432" src="https://youtu.be/-4NyaS6urG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/-4NyaS6urG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Trial and Error 
 *I believed this game concept was a series of simple ideas. I was mostly mistaken.*   

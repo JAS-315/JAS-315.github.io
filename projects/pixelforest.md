@@ -14,7 +14,7 @@ labels:
 summary: OpenGL Forest, using 2D textures on 3D models and heirarchical modelling.
 ---
 
-<iframe width="768" height="432" src="https://youtu.be/MtpvUXYUJms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://www.youtube.com/embed/MtpvUXYUJms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <img class="ui large centered rounded image" src="../images/pixel forest 1a.png">
 
