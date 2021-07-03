@@ -12,9 +12,7 @@ labels:
 summary: A collaborative project to make a side-scrolling space shooter called "The Last PyFighter." Our team, "Try Force," created this game in a very short amount of time.
 ---
 
-<video width="720" height="405" controls>
-    <source src="../images/pygame demo.mp4" type="video/mp4">
-</video>
+<iframe width="768" height="432" src="https://youtu.be/HxlP7ZSejlw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [The project's GitHub repo](https://github.com/Demi-hero/UoN_Game_Project).
 Try Force was [Peter](https://github.com/ExcessGravitas), [Nathan](https://github.com/Demi-hero/), and myself. They were really lovely to work with.
