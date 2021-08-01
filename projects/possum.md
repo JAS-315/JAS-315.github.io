@@ -21,7 +21,7 @@ summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7
 
 ## Introduction 
 ### Background
-- As a fan of low-stress, self-paced, exploratory games, my aim was to create a small, contained narrative with a minimalistic approach. Death is not necessarily looming, but it is possible; there are fun elements that don’t progress the game, but don’t go completely off track (extra places to climb or bounce); and the level design and elements are not limited to one concept (obstacles, triggers, etc., could be altered to fit an expanded story and game).  
+- As a fan of low-stress, self-paced, exploratory games, my aim was to create a small, contained narrative with a minimalistic approach. Death is not necessarily looming, but it is possible; there are fun elements that don’t progress the game, but don’t go completely off track (extra places to climb or bounce); and the level design and elements are not limited to single concepts.  
   - I took inspiration from games like Piku Niku, where the fun atmosphere and movements, as well as the playful aesthetics and narrative, are the focus. It’s challenging to do this on a small scale and quickly. 
 
 ### Story 
@@ -40,7 +40,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - Player must overcome/solve obstacles to progress and the possum is required to advance levels. 
 - As you move through each level, the jumps get more challenging. 
   - In Level 1, missing a jump initially sets you back in progress, but later will result in “death,” thus restarting the level. 
-  - In Level 2, most of vertical jumps are significantly wider, but involve a platform affected by physics (see Physics and Parameters for more information). Missing a jump will restart the level. 
+  - In Level 2, most of vertical jumps are significantly wider, but involve a platform affected by physics (see Physics and Parameters for more information). 
 
 ### Characters 
 <img class="ui medium right floated rounded image" src="../images/title screen.png">
@@ -53,15 +53,9 @@ You find a possum eating trash in the city. This is no place for a possum. You f
   - Checkers is invincible, but sometimes will play dead. 
   
 ### Physics and Parameters 
-- The graphics are all pixel art, most of which is 16x16 or 32x32, save the backgrounds. 
-- Jump generally clears an obstacle or gap of two tiles (32px or 64px, depending on the level). 
-- Any collision Pink has with a hazard resets the level.  
-  - Checkers collisions are only effective when Pink has fullfilled the conditions to collect him (i.e., he will not take damage).
-- Pink has a default mass and gravity of 1, allowing him to interact with the world.  
-  - Pink’s mass is increased by the value of Checkers’ mass, when Checkers is following (resets when not). In Level 2, this affects logs in the water, making them more challenging to clear with a follower.  
-    - This is not made explicit and adds to the difficulty curve.
+
 <img class="ui large right floated rounded image" src="../images/play dead.PNG">
-- While Checkers is “playing dead,” any connectivity and following features are removed. He will fall to the ground (if airborne) and his twitching body will be able to be scooted around by Pink (this sounds morbid typed out, but is meant to be playful. I mean, he's not really dead...).           
+- While Checkers is “playing dead,” he will not follow.           
 - Certain surfaces have a “bouncy” physics material, allowing the player to jump higher than usual. Some instances are essential, while others are playful. 
   - Level 1: the awnings of buildings are bouncy, and a secondary jump can be made to increase height further. This is necessary at least once--- twice if the player’s velocity is too low when initially striking the surface.  
 <img class="ui medium right floated rounded image" src="../images/kick berry.png">
@@ -79,19 +73,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - There are two sets of enemies:  
   - Frog-type enemies- patrol without intelligence. 
   - Blueberry-type enemies- patrol with sight and speed up once player is in “sight.”  
-    - They were meant to look left and right directly after the player leaves the sightrange, but the code is unfinished. As it stands, the animation is set to mimic that, but it actually continues to “look” the last direction it was facing. 
-    
-### Level Requirements 
-*Two side-scrolling levels; multiple areas delineated by objects and backgrounds.* 
-- Level 1 areas- more rigid and defined, as they are “constructed:”  
-  - city, port, park.  
-- Level 2 areas- more flowing and natural:  
-  - various areas of forest- entrance, frog infested, campground, fruit grove. 
-- It is not possible to get/keep the possum without overcoming all challenges, and it is not possible to progress to the next level without the possum.  
-- Difficulty increases as the player progresses through each level and through the game. 
-- Features that might be less apparent (request system and introduction of enemies) are initially revealed via short cutscenes, indicating what should be done.  
-  - For later instances, these features are not reintroduced. 
-
+ 
 ## Design Notes 
 ### Level Design Aesthetics 
 - Both levels are designed with a series of Tile Maps set to various Layers, some of which have their HSV parameters set to give the illusion of depth. 
@@ -109,11 +91,6 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - Another thing I couldn't tear myself away from that I love from the 16-bit days are cutscenes. Yes, we have cutscenes now, but there was something really fun about cutscenes then. Think back to Chrono Trigger and your first visit to Magus' castle; Terranigma and the skateboarding scene; Final Fantasy III (US) and the opera (amongst so many others). There was something exciting and unique there. So, I made the end of my currently very short game with that in mind. 
 
 <iframe width="768" height="432" src="https://www.youtube.com/embed/-4NyaS6urG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-### Trial and Error 
-*I believed this game concept was a series of simple ideas. I was mostly mistaken.*   
-- After a great deal of experimenting with different approaches, I began looking into “follow the leader” type scripts. I wanted something like the followers in Phantasy Star II (Sega Genesis 1989) or Chrono Trigger (SNES 1995), as the original idea of the game was to collect several possums.   
-  - The current iteration stores and mimics the location and timing of movements, not idle time.
   
 ## Asset, etc. Attributions 
 ### Graphics: 
