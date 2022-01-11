@@ -3,7 +3,7 @@ layout: project
 type: project
 image: images/commissioning tool images/v3/commissioning_tool_config_v3_inclinometer_input.png
 title: Commissioning Tool UI
-permalink: projects/pixelforest
+permalink: projects/commissioningtool
 # All dates must be YYYY-MM-DD format!
 date: 2021-12-15
 labels:
