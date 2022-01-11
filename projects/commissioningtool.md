@@ -43,3 +43,19 @@ A global submit button was further introduced at the bottom of the page. The inc
 <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_inclinometer_input_submitted.png">
 </div>
 
+##Version 3
+As I worked more on the software and realised some of its capabilities, I considered more hiding/showing of sections, rather than disabling them. This carried into the final stages of the project, as you will see. 
+
+In this iteration, I added in visual feedback for the inclinometer readings (the labels will change in the end). The first is the reading from the hardware, the second is what is entered in the input box (reflecting the manual measurements of an on-site engineer), and the last is the calculated offset (which is found automatically, as the frontend performs a calculation using a raw measurement from the hardware and the inputted reading as entered by the user). Once calculate is pressed, the calculation is performed and the result is both displayed to the user and saved to the API.
+
+At this stage, the visual indicators (checkboxes) remained in the wireframe, but not the actual product, as I believe the visual feedback from the measurements and calculations would be enough. Finally, the global submit button was moved to the side, rather than below, as I shifted the entire layout. Again, the submit button would save any changes the user had inputted back to the hardware.
+
+<div class="ui large centered rounded images">
+  <img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_home.png">
+<img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_site_selection.png">
+  <img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_connected.png">
+<img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_get_voltage.png">
+<img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_inclinometer_input.png">
+<img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_inclinometer_calculation.png">
+<img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_inclinometers_submitted.png">
+</div>
