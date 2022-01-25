@@ -29,8 +29,8 @@ I eventually worked around it, as this is a common problem. The remedy does alte
 I constructed the next three models for use on a project that was eventually abandoned. The cat is actually my first ever complete Blender model. I spent a lot of time, used reference photos, and lots of sculpting and smoothing to get the final product. I used mirroring to keep consistency for the model, as well. Initially, I was going to use realistic textures for the eyes, but that proved to be something out of actual nightmares. So, I used a simply painted UV map. If I were going to make this more realistic, I would use hair, instead of a smooth surface.
 
   <div class="ui medium rounded images">
-  <img class="ui image" src="../images/blender/cat face.PNG">
-  <img class="ui image" src="../images/blender/cat stand.PNG">  
+  <img class="ui image" src="../images/blender/cat face.png">
+  <img class="ui image" src="../images/blender/cat stand.png">  
   <img class="ui image" src="../images/blender/cat nightmare.png"></div>
 
 For the butterfly, I again used mirroring to keep the halves consistent. This time, I used actual photographs of a butterfly (limenitis arthemis or "red spotted purple butterfly") to texture the wings. To have them double sided, I just put two surfaces close together, the shored up the thickness. The body here is simply a black material, with its values adjusted, so it's not too shiny.
@@ -47,7 +47,7 @@ The daffodil is my favorite model. I used a simply painted UV map, much like the
   <img class="ui image" src="../images/blender/red devon.jpg">
   <img class="ui image" src="../images/blender/daf 1.PNG">
   <img class="ui image" src="../images/blender/daf 2.PNG">
-  <img class="ui image" src="../images/blender/daf 3.PNG">
+  <img class="ui image" src="../images/blender/daf 3.png">
   <img class="ui image" src="../images/blender/daf 4.PNG">
   <img class="ui image" src="../images/blender/daf 5.PNG"></div>
 
