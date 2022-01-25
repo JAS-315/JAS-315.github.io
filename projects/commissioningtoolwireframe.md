@@ -50,8 +50,6 @@ In this iteration, I added in visual feedback for the inclinometer readings usin
 
 At this stage, the visual indicators (checkboxes) remained in the wireframe, but not the actual product, as I believe the visual feedback from the measurements and calculations would be enough. Finally, the global submit button was moved to the side, rather than below, as I shifted the entire layout. Again, the submit button would save any changes the user had inputted back to the hardware.
 
-
-
 <div class="ui large centered rounded images">
   <img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_home.png">
 <img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_site_selection.png">
@@ -60,4 +58,19 @@ At this stage, the visual indicators (checkboxes) remained in the wireframe, but
 <img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_inclinometer_input.png">
 <img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_inclinometer_calculation.png">
 <img class="ui image" src="../images/commissioning tool images/v3/commissioning_tool_config_v3_inclinometers_submitted.png">
+</div>
+
+
+<div class="ui large centered rounded images">
+  <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_home.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_site_selections.png">
+  <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_connected.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_get_voltage.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_inc_offsets_input.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_inc_offsets_calculate.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_select.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_refresh.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_set_threshold_1.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_set_threshold_2.png">
+<img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_global_submit.png">
 </div>
