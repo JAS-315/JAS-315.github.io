@@ -82,7 +82,7 @@ In this final wireframe, the most complex part of the project got added in, whic
 
 As I felt the labels added as visual feedback on the inclinometer input/button pairings would be sufficient, I removed the checkbox placeholders from the wireframe. The label wording was also adjusted to be more apparent to the user what is being shown.
 
-<div class="ui big centered rounded images">
+<div class="ui fluid rounded images">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_connected.png">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_get_voltage.png">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_inc_offsets_input.png">
@@ -91,7 +91,7 @@ As I felt the labels added as visual feedback on the inclinometer input/button p
 
 I used the negative space on the right side of the tool to display the channel dropdown, which allows the user to choose which signals to display. The refresh button pulls the latest two profiles from the hardware, and each include the channel name, position (raise, lower, hunting), and a timestamp at the top. The x axis is time (seconds) and the y axis changes with each channel, reflecting the unit of measurement the hardware uses. Each chart has a padding of 10% above and below the displayed signals, so the chart is easy to read (no line is either at the top or bottom border). 
 
-<div class="ui big centered rounded images">
+<div class="ui fluid rounded images">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_select.png">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_refresh.png">
 </div>
@@ -105,6 +105,6 @@ Some channels have a threshold, which the off-site engineer can adjust using an 
 
 Just as with the calculate buttons on the inclinometer side, the threshold set button submits the value back to the API, and the global submit button (bottom) submits it to the actual hardware. I added visual feedback messages to the global submit button showing either that no new information had been submitted (in the case no new inclinometer measurements or thresholds were inputted) or that the configuration was successfully saved to the hardware with a timestamp. 
 
-<div class="ui big centered rounded images">
+<div class="ui fluid rounded images">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_global_submit.png">
 </div>
