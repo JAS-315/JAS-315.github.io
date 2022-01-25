@@ -98,7 +98,7 @@ I used the negative space on the right side of the tool to display the channel d
 
 Some channels have a threshold, which the off-site engineer can adjust using an input/button pair. The allowable values for such are within 10% of either side of the range, so each channel that has a threshold have different min/max, which are calculated automatically within the tool.
 
-<div class="ui big centered rounded images">
+<div class="ui fluid rounded images">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_set_threshold_1.png">
 <img class="ui image" src="../images/commissioning tool images/v4/commissioning_tool_config_v4_channel_set_threshold_2.png">
 </div>
