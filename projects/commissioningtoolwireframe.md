@@ -29,17 +29,23 @@ At this early stage, trying to visualise how things would come together on the i
 ## Version 2
 In the second iteration, the unnecessary firmware check and updated the layout for the input/button pairs for the manually inputting an offset to the hardware. I wanted a visual indicator of some sort to show the user had submitted the manual reading from the commissioning engineer to calculate the offset within the hardware, but I was not quite sure what that would entail at this point, hence the checkboxes as a temporary visual indicator that calculation had been successful.
 
-I wanted an indicator that showed that inputted readings on the inclinometer offsets were bound within a range, shown as green or red highlights on the wireframe (in production, there will only be a highlight at all if you are outside the range). I also tried to indicate the possibility that parts of the page would be disabled until certain tasks were completed, though this would not be the case as the project progressed.
-
-A global submit button was further introduced at the bottom of the page. The inclinometer calculation buttons would submit back to the API, then the global submit would save the changes in configuration back to the hardware. This concept of submitting certain information to the API, rather than directly to the hardware, would be better fleshed out at a later time.
-
 <div class="ui large centered rounded images">
   <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_home.png">
   <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_connected.png">
 <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_volts.png">
 <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_volts_submit.png">
+</div>
+
+I wanted an indicator that showed that inputted readings on the inclinometer offsets were bound within a range, shown as green or red highlights on the wireframe (in production, there will only be a highlight at all if you are outside the range). I also tried to indicate the possibility that parts of the page would be disabled until certain tasks were completed, though this would not be the case as the project progressed.
+
+<div class="ui large centered rounded images">
 <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_inclinometer_input.png">
 <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_inclinometer_input_ready.png">
+</div>
+
+A global submit button was further introduced at the bottom of the page. The inclinometer calculation buttons would submit back to the API, then the global submit would save the changes in configuration back to the hardware. This concept of submitting certain information to the API, rather than directly to the hardware, would be better fleshed out at a later time.
+
+<div class="ui large centered rounded images">
 <img class="ui image" src="../images/commissioning tool images/v2/commissioning_tool_config_v2_inclinometer_input_submitted.png">
 </div>
 
