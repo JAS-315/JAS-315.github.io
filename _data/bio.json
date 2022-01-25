@@ -30,7 +30,7 @@
   "interests": [
     {
       "name": "artificial intelligence",
-      "keywords": [
+      "keywords": [ ""
       ]
     },
     {
@@ -130,7 +130,7 @@
       "company": "Balfour Beatty",
       "position": "Software Engineer",
       "website": "https://www.balfourbeatty.com/",
-      "startDate": "2021-10",
+      "startDate": "2021-10-26",
       "endDate": "",
       "summary": "Positioned with the Software Engineering Team but in collaboration with other teams as necessary.",
       "highlights": [
@@ -141,7 +141,7 @@
       "company": "Men's Roller Derby Association",
       "position": "Director of Member Relations",
       "website": "http://www.MRDA.org",
-      "startDate": "2019-01",
+      "startDate": "2019-01-15",
       "endDate": "",
       "summary": "501(c)(3) non-profit organization (USA).",
       "highlights": [
@@ -154,8 +154,8 @@
       "company": "Tacoma Public Schools",
       "position": "Guest Teacher",
       "website": "https://www.tacomaschools.org/",
-      "startDate": "2015-12",
-      "endDate": "2018-01",
+      "startDate": "2015-12-01",
+      "endDate": "2018-01-15",
       "summary": "K-12; specialization in Special Education and Behaviour Disorder classrooms; preference for disadvantaged schools.",
       "highlights": [
         "Cultivated connections and strong student rapport to foster classroom engagement.",
@@ -166,8 +166,8 @@
       "company": "Missouri State University",
       "position": "Adjunct Lecturer",
       "website": "https://www.missouristate.edu/",
-      "startDate": "2015-01",
-      "endDate": "2015-05",
+      "startDate": "2015-01-01",
+      "endDate": "2015-05-15",
       "summary": "Contract position— Religious Studies 210: Paths of World Religions.",
       "highlights": [
         "Facilitated discussions and encouraged independent thought by posing open-ended questions.",
@@ -178,8 +178,8 @@
       "company": "Reasoning Mind",
       "position": "Student Mentor",
       "website": "",
-      "startDate": "2014-09",
-      "endDate": "2016-06",
+      "startDate": "2014-09-15",
+      "endDate": "2016-06-15",
       "summary": "Student mentor for elementary math programme, developed by Reasoning Mind and used nationwide (USA).",
       "highlights": [
         "Offered stability and positive reinforcement to inspire student engagement with the materials.",
@@ -190,8 +190,8 @@
       "company": "University of Missouri",
       "position": "Teaching Assistant",
       "website": "https://www.missouri.edu/",
-      "startDate": "2011-08",
-      "endDate": "2014-05",
+      "startDate": "2011-08-01",
+      "endDate": "2014-05-15",
       "summary": "Popular Teaching Assistant, with assignments in various modules. Invited Guest Lecturer in Religious Studies and Philosophy.",
       "highlights": [
         "Offered complete instructional support for students unable to attend regular classes and delivered personalised educational and emotional support to individual students to establish a positive learning environment.",
@@ -208,7 +208,7 @@
       "startDate": "",
       "endDate": "",
       "summary": "",
-      "highlights": [
+      "highlights": [ ""
       ]
     }
   ],
