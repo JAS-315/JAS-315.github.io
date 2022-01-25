@@ -39,6 +39,7 @@
         "analysis",
         "modelling",
         "Azure",
+        "Tableau",
         "Power BI"
       ]
     },
@@ -75,12 +76,10 @@
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "",
       "level": "",
       "keywords": [
-        "Windows 10",
-        "MacOS",
-        "Git/GitHub"
+        ""
       ]
     }
   ],
@@ -91,7 +90,7 @@
       "studyType": "MSc",
       "startDate": "",
       "endDate": "2020",
-      "gpa": "",
+      "gpa": "Distinction",
       "courses": [
         "Programming",
         "Systems and Networks",
@@ -128,24 +127,87 @@
   ],
   "work": [
     {
-      "company": "See LinkedIn",
-      "position": "",
-      "website": "",
-      "startDate": "",
+      "company": "Balfour Beatty",
+      "position": "Software Engineer",
+      "website": "https://www.balfourbeatty.com/",
+      "startDate": "2021-10",
       "endDate": "",
-      "summary": "",
+      "summary": "Positioned with the Software Engineering Team but in collaboration with other teams as necessary.",
       "highlights": [
+        "Current project (Signaling Team): creating an input system (frontend, Python) for commissioning engineers who are involved in calculating equipment measurements (inclinometer offsets, battery voltage, etc.) at level crossings."
+      ]
+    },
+    {
+      "company": "Men's Roller Derby Association",
+      "position": "Director of Member Relations",
+      "website": "http://www.MRDA.org",
+      "startDate": "2019-01",
+      "endDate": "",
+      "summary": "501(c)(3) non-profit organization (USA).",
+      "highlights": [
+        "Committee oversight: member onboarding, volunteer staffing, league compliance, and corrective action.",
+        "Managing internal operational standards and organizational goals with regards to new and existing members.",
+        "Streamlining processes for 160% faster turnaround and improved clarity."
+      ]
+    },
+    {
+      "company": "Tacoma Public Schools",
+      "position": "Guest Teacher",
+      "website": "https://www.tacomaschools.org/",
+      "startDate": "2015-12",
+      "endDate": "2018-01",
+      "summary": "K-12; specialization in Special Education and Behaviour Disorder classrooms; preference for disadvantaged schools.",
+      "highlights": [
+        "Cultivated connections and strong student rapport to foster classroom engagement.",
+        "Redirected students using Positive Behaviour Support."
+      ]
+    },
+    {
+      "company": "Missouri State University",
+      "position": "Adjunct Lecturer",
+      "website": "https://www.missouristate.edu/",
+      "startDate": "2015-01",
+      "endDate": "2015-05",
+      "summary": "Contract position— Religious Studies 210: Paths of World Religions.",
+      "highlights": [
+        "Facilitated discussions and encouraged independent thought by posing open-ended questions.",
+        "Provided advice and guidance to students needing morale-boosting and academic advising."
+      ]
+    },
+    {
+      "company": "Reasoning Mind",
+      "position": "Student Mentor",
+      "website": "",
+      "startDate": "2014-09",
+      "endDate": "2016-06",
+      "summary": "Student mentor for elementary math programme, developed by Reasoning Mind and used nationwide (USA).",
+      "highlights": [
+        "Offered stability and positive reinforcement to inspire student engagement with the materials.",
+        "Counselled students individually to help promote personal and educational motivation."
+      ]
+    },
+    {
+      "company": "University of Missouri",
+      "position": "Teaching Assistant",
+      "website": "https://www.missouri.edu/",
+      "startDate": "2011-08",
+      "endDate": "2014-05",
+      "summary": "Popular Teaching Assistant, with assignments in various modules. Invited Guest Lecturer in Religious Studies and Philosophy.",
+      "highlights": [
+        "Offered complete instructional support for students unable to attend regular classes and delivered personalised educational and emotional support to individual students to establish a positive learning environment.",
+        "Independently led recitation sections (RS 2100) and review sessions to increase student interest and understanding.",
+        "Tutored struggling students individually and in small groups to reinforce learning outcomes."
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "Men's Roller Derby Association",
-      "website": "http://www.MRDA.org",
-      "position": "Director of Member Relations",
-      "startDate": "2019-15-01",
-      "endDate": "Present",
-      "summary": "Elected directorship: overseeing member league status and compliance, and member complaints",
+      "organization": "",
+      "website": "",
+      "position": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
       "highlights": [
       ]
     }
