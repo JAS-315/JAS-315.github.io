@@ -54,7 +54,7 @@ All of this was actually done on the final day, a few hours before the project w
 
 <img class="ui large centered rounded image" src="../images/pyfighter/pyfighter boss 1.png">
 
-<div class="ui small centered rounded images">
+<div class="ui medium centered rounded images">
   <img class="ui image" src="../images/pyfighter/pyfighter boss 2.png">
   <img class="ui image" src="../images/pyfighter/pyfighter boss 3.png">
   <img class="ui image" src="../images/pyfighter/pyfighter boss 4.png">
@@ -63,6 +63,11 @@ All of this was actually done on the final day, a few hours before the project w
 
 ### Powerups
 There are two powerups available randomly to the player: an extra life and a bomb. The extra life simply adds an extra try to the players available lives. The bomb will damage all ships on the screen (for alien ships, it will destroy all visible ships, regardless of whether they are shielded. For boss ships, it will deal substantial damage but not automatically destroy it (unless the boss' health is already so low)).
+
+<div class="ui small centered rounded images">
+  <img class="ui image" src="../images/pyfighter/pyfighter powerup 1.png">
+  <img class="ui image" src="../images/pyfighter/pyfighter powerup 2.png">
+</div>
 
 The powerups were designed to stand out, but not create "busy" distractions for the player. The extra life is a smaller version of the hero ship with a flashing "+1" above it. The bomb is shown as a metal case with a red swirling interior. Both powerups can be collected by coming into contact with them.
 
