@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/py title.png
+image: images/pyfighter/py title.png
 title: Collaborative Project- Video Game
 permalink: projects/pyfighter
 # All dates must be YYYY-MM-DD format!
@@ -29,8 +29,8 @@ I created all of the graphics, which were hand-drawn on an iPad and edited with 
 - background
 
 <div class="ui large centered rounded images">
-  <img class="ui image" src="../images/pyfighter title.png">
-  <img class="ui image" src="../images/pyfighter wave.png">
+  <img class="ui image" src="../images/pyfighter/pyfighter title.png">
+  <img class="ui image" src="../images/pyfighter/pyfighter wave.png">
 </div>
 
 ## Player and Enemies
@@ -52,13 +52,13 @@ For the "boss" enemies, I drew the ship in various states of destruction, which 
 
 All of this was actually done on the final day, a few hours before the project was to be completed. I was pleasantly surprised how well it turned out.
 
-<img class="ui large centered rounded image" src="../images/pyfighter boss 1.png">
+<img class="ui large centered rounded image" src="../images/pyfighter/pyfighter boss 1.png">
 
 <div class="ui small centered rounded images">
-  <img class="ui image" src="../images/pyfighter boss 2.png">
-  <img class="ui image" src="../images/pyfighter boss 3.png">
-  <img class="ui image" src="../images/pyfighter boss 4.png">
-  <img class="ui image" src="../images/pyfighter boss 5.png">
+  <img class="ui image" src="../images/pyfighter/pyfighter boss 2.png">
+  <img class="ui image" src="../images/pyfighter/pyfighter boss 3.png">
+  <img class="ui image" src="../images/pyfighter/pyfighter boss 4.png">
+  <img class="ui image" src="../images/pyfighter/pyfighter boss 5.png">
 </div>
 
 ### Powerups
