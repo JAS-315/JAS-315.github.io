@@ -1,6 +1,7 @@
 ---
 layout: project
 type: project
+draft: true
 image: images/commissioning tool images/ct-wf-demo.png
 title: Commissioning Tool UI Wireframes
 permalink: projects/commissioningtoolwireframe
