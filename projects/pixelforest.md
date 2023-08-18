@@ -5,7 +5,7 @@ image: images/pixel forest/pixel forest 1b.png
 title: Pixel Forest
 permalink: projects/pixelforest
 # All dates must be YYYY-MM-DD format!
-date: 2020-08-11
+# date: 2020-08-11
 labels:
   - OpenGL
   - C++

@@ -5,7 +5,7 @@ image: images/blender/blender-collage.png
 title: Blender Models
 permalink: projects/blender
 # All dates must be YYYY-MM-DD format!
-date: 2019-10-13
+# date: 2019-10-13
 labels:
   - Blender
   - 3D

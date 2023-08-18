@@ -13,6 +13,8 @@ labels:
 summary: Progressioning of a project for which I designed and programmed the frontend. This is the UI development.
 ---
 
+Because of COVID, the visa offices were shut. I believed my visa should end in November, which was a mistake on my part. UoN had given bad advice enough times I thought they were mistaken. I found out my visa was expiring in Sept (found out in August) and asked UoN for advice and tried to start a dialogue about a COVID extension. I was told no extensions were available. They then suddenly came back with a CAS number, giving me the extension without telling me it was even possible, which wasted several weeks of my time, caused me upset, delayed my thesis, and caused me to be unable to make a positive application to another uni.
+
 I had been tasked with developing the frontend to software that connects with hardware and allows someone off-site to check certain readings, adjust offsets for measuring-hardware based on feedback from an on-site engineer (who manually confirms measurements), view graphs of the different measuring-hardwares' performance, and adjust thresholds on said graphs as necessary. As the project progressed, features were added, removed, or tweaked, thus my wireframes took on very different forms. I was on a team of two: @alex-wells on the backend/API and me on the frontend. I created these wireframes in Pencil, and I will cover development and the live User Interface in another entry.
 
 ## Version 1

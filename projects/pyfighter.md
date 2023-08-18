@@ -5,7 +5,7 @@ image: images/pyfighter/py title.png
 title: Collaborative Project- Video Game
 permalink: projects/pyfighter
 # All dates must be YYYY-MM-DD format!
-date: 2018-12-28
+# date: 2018-12-28
 labels:
   - Python
   - Pygame

@@ -5,7 +5,7 @@ image: images/DMA images/dataex.png
 title: Data Modelling Project
 permalink: projects/dataplant
 # All dates must be YYYY-MM-DD format!
-date: 2019-12-16
+# date: 2019-12-16
 labels:
   - R
   - Weka

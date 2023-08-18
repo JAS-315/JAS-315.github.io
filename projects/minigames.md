@@ -5,7 +5,7 @@ image: images/demos-depth-collage2.png
 title: Mini-Games
 permalink: projects/minigames
 # All dates must be YYYY-MM-DD format!
-date: 2020-02-15
+# date: 2020-02-15
 labels:
   - Unity
   - C#
