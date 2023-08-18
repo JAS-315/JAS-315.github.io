@@ -84,14 +84,7 @@
       "startDate": "",
       "endDate": "2020",
       "gpa": "Distinction",
-      "courses": [
-        "Programming",
-        "Systems and Networks",
-        "Databases, Interfaces, and Software Design Principles",
-        "Computer Graphics",
-        "Games",
-        "Data Modelling and Anaylsis"
-      ]
+      "courses": ""
     },
     {
       "institution": "University of Missouri, Columbia, MO, USA",
