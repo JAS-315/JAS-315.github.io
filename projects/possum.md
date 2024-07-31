@@ -58,7 +58,7 @@ You find a possum eating trash in the city. This is no place for a possum. You f
 - While Checkers is “playing dead,” he will not follow.           
 - Certain surfaces have a “bouncy” physics material, allowing the player to jump higher than usual. Some instances are essential, while others are playful. 
   - Level 1: the awnings of buildings are bouncy, and a secondary jump can be made to increase height further. This is necessary at least once--- twice if the player’s velocity is too low when initially striking the surface.  
-<img class="ui medium right floated rounded image" src="../images/kick berry.png">
+<img class="ui medium right floated rounded image" src="../images/possum/kick berry.png">
   - Level 2: when enemies are stomped, there is a delay before the corpse is cleared. Different Colliders allow different effects. 
     - Frog-type enemies: the player can bounce on the smashed enemy until cleared. 
     - Blueberry-type enemies: the player can roll or be kick the enemy, like a ball, until cleared.  
