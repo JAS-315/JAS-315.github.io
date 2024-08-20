@@ -12,12 +12,12 @@ labels:
   - 2D
   - Pixel Art
   - Video Game
-summary: 2D side-scroller, now with 100% more possum. Includes reel, featuring 7 mini-games with focus on the possum game.
+summary: 2D side-scroller, now with 100% more possum.
 ---
 
 <iframe src="[https://youtu.be/QO4lUSi3T-A?si=DROojo0SXLSGZjej]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-*Reel with highlights of 7 mini-games and a focus on the possum game.*
+*Reel with highlights of the possum game.*
 
 ## Introduction 
 ### Background
