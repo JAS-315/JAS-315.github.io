@@ -15,7 +15,7 @@ labels:
 summary: 2D side-scroller, now with 100% more possum.
 ---
 
-<iframe width="768" height="432" src="[https://youtu.be/QO4lUSi3T-A?si=DROojo0SXLSGZjej]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="768" height="432" src="[https://www.youtube.com/embed/5JJ9mQZG_fMax_FU]" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *Reel with highlights of the possum game.*
 
